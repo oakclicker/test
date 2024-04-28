@@ -5,7 +5,7 @@ function App() {
   const [userData, setUserData] = useState({});
 
   useEffect(() => {
-    fetch('/user')
+    fetch('http://62.217.182.104:3000/user')
       .then(response => response.json())
       .then(data => setUserData(data))
       .catch(error => console.error('Ошибка:', error));
