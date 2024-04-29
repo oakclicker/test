@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 function App() {
   const [userData, setUserData] = useState(null);
+  const incrementButtonRef = useRef(null);
 
   useEffect(() => {
     const telegramApp = window.Telegram.WebApp;
@@ -17,18 +18,22 @@ function App() {
     updateUserData();
 
     // Добавляем обработчик события для кнопки увеличения баланса
-    const incrementButton = document.getElementById("incrementButton");
-    incrementButton.addEventListener('click', () => {
-      const balanceElement = document.getElementById("balance");
-      const currentBalance = parseInt(balanceElement.innerText.split(": ")[1]);
-      balanceElement.innerText = `Balance: ${currentBalance + 1}`;
-    });
+    const incrementButton = incrementButtonRef.current;
+    if (incrementButton) {
+      incrementButton.addEventListener('click', () => {
+        const balanceElement = document.getElementById("balance");
+        const currentBalance = parseInt(balanceElement.innerText.split(": ")[1]);
+        balanceElement.innerText = `Balance: ${currentBalance + 1}`;
+      });
+    }
 
     // Очистка слушателя событий при размонтировании компонента
     return () => {
-      incrementButton.removeEventListener('click');
+      if (incrementButton) {
+        incrementButton.removeEventListener('click');
+      }
     };
-  }, []); // Пустой массив зависимостей для запуска эффекта только один раз при монтировании компонента
+  }, []);
 
   return (
     <div className="App">
@@ -40,6 +45,8 @@ function App() {
           <img src={userData.photo_url} alt="User Avatar" id="avatar" />
         </div>
       )}
+      <button ref={incrementButtonRef} id="incrementButton">Increment Balance</button>
+      <p id="balance">Balance: 0</p>
     </div>
   );
 }
