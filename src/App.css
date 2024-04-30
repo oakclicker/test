@@ -44,12 +44,12 @@
   justify-content: space-around;
   background: linear-gradient(to top, #170F36, #381DA1); /* Градиентный фон */
   border-radius: 20px; /* Закругление углов */
-  padding: 13px 10px; /* Внутренние отступы */
+  padding: 5px 10px; /* Внутренние отступы */
   flex-wrap: wrap; /* Разрешение переноса кнопок на следующую строку */
 }
 
 .nav-button {
-  padding: 16px; /* Уменьшаем внутренний отступ */
+  padding: 8px; /* Уменьшаем внутренний отступ */
   min-width: 60px; /* Устанавливаем минимальную ширину */
   font-size: 18px;
   border: none;
