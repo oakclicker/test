@@ -1,41 +1,78 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #2a1d5a;
+  background-color: #2A1D5A;
+}
+
+.App {
+  text-align: center;
+  background-color: aqua;
+
 }
 
 .user-panel {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
 .balance {
-  margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .add-balance-button {
-  width: 200px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #4caf50;
-  color: white;
-  font-size: 18px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
-.add-balance-button:hover {
-  background-color: #45a049;
+.app-window {
+  padding: 20px;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 30px; /* Установка высоты от нижнего края */
+  left: 20px; /* Установка отступа слева */
+  right: 20px; /* Установка отступа справа */
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to top, #170F36, #381DA1); /* Градиентный фон */
+  border-radius: 20px; /* Закругление углов */
+  padding: 13px 10px; /* Внутренние отступы */
+  flex-wrap: wrap; /* Разрешение переноса кнопок на следующую строку */
+}
+
+.nav-button {
+  padding: 16px; /* Уменьшаем внутренний отступ */
+  min-width: 60px; /* Устанавливаем минимальную ширину */
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px; /* Закругление углов кнопок */
+  width: 20%; /* Устанавливаем ширину кнопки в 20% от ширины контейнера */
+  box-sizing: border-box; /* Учитываем внутренние отступы в общей ширине */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  color: #8A8A8A;
+}
+
+.nav-button.active {
+  color: #FFFFFF;
+  background-color: #0A0714; /* Цвет фона активной кнопки */
+}
+
+.nav-button img {
+  max-width: 80%; /* Ограничиваем ширину иконки */
+  margin-bottom: 4px; /* Устанавливаем отступ между иконкой и текстом */
+  background-color: transparent;
 }

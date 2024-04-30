@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Rating from './pages/Rating.js';
-import Mine from './pages/Mine.js';
-import Earn from './pages/Earn.js';
-import Friends from './pages/Friends.js';
+import RatingIcon from './icons/rating.png';
+import MineIcon from './icons/mine.png';
+import AppIcon from './icons/menu.png';
+import EarnIcon from './icons/task.png';
+import FriendsIcon from './icons/friends.png';
+import RatingActiveIcon from './icons/active/rating-active.png';
+import MineActiveIcon from './icons/active/mine-active.png';
+import AppActiveIcon from './icons/active/menu-active.png';
+import EarnActiveIcon from './icons/active/tasks-active.png';
+import FriendsActiveIcon from './icons/active/friends-active.png';
+import Rating from './components/Rating';
+import Mine from './components/Mine';
+import Earn from './components/Earn';
+import Friends from './components/Friends';
 
 function App() {
   const [userData, setUserData] = useState(null);
   const [balance, setBalance] = useState(0);
-  const [activeWindow, setActiveWindow] = useState(null);
+  const [activeWindow, setActiveWindow] = useState('App'); // Задаем активное окно по умолчанию
 
   useEffect(() => {
     const telegramApp = window.Telegram.WebApp;
@@ -21,7 +31,24 @@ function App() {
   };
 
   const handleWindowChange = (windowName) => {
-    setActiveWindow(windowName);
+    setActiveWindow(prevWindow => (prevWindow === windowName ? null : windowName));
+  };
+
+  const getIcon = (windowName) => {
+    switch (windowName) {
+      case 'Rating':
+        return activeWindow === 'Rating' ? RatingActiveIcon : RatingIcon;
+      case 'Mine':
+        return activeWindow === 'Mine' ? MineActiveIcon : MineIcon;
+      case 'App':
+        return activeWindow === 'App' ? AppActiveIcon : AppIcon;
+      case 'Earn':
+        return activeWindow === 'Earn' ? EarnActiveIcon : EarnIcon;
+      case 'Friends':
+        return activeWindow === 'Friends' ? FriendsActiveIcon : FriendsIcon;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -40,17 +67,37 @@ function App() {
         </div>
       )}
 
+      {activeWindow === 'App' && (
+        <div className="app-window">
+          <h2>App Window</h2>
+        </div>
+      )}
+
       <div className="navigation">
-        <button onClick={() => handleWindowChange('Rating')}>Rating</button>
-        <button onClick={() => handleWindowChange('Mine')}>Mine</button>
-        <button onClick={() => handleWindowChange('App')}>App</button>
-        <button onClick={() => handleWindowChange('Earn')}>Earn</button>
-        <button onClick={() => handleWindowChange('Friends')}>Friends</button>
+        <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
+          <img src={getIcon('Rating')} alt="Rating Icon" />
+          Rating
+        </button>
+        <button className={`nav-button ${activeWindow === 'Mine' && 'active'}`} onClick={() => handleWindowChange('Mine')}>
+          <img src={getIcon('Mine')} alt="Mine Icon" />
+          Mine
+        </button>
+        <button className={`nav-button ${activeWindow === 'App' && 'active'}`} onClick={() => handleWindowChange('App')}>
+          <img src={getIcon('App')} alt="App Icon" />
+          App
+        </button>
+        <button className={`nav-button ${activeWindow === 'Earn' && 'active'}`} onClick={() => handleWindowChange('Earn')}>
+          <img src={getIcon('Earn')} alt="Earn Icon" />
+          Earn
+        </button>
+        <button className={`nav-button ${activeWindow === 'Friends' && 'active'}`} onClick={() => handleWindowChange('Friends')}>
+          <img src={getIcon('Friends')} alt="Friends Icon" />
+          Friends
+        </button>
       </div>
 
       {activeWindow === 'Rating' && <Rating />}
       {activeWindow === 'Mine' && <Mine />}
-      {activeWindow === 'App' && <App />}
       {activeWindow === 'Earn' && <Earn />}
       {activeWindow === 'Friends' && <Friends />}
     </div>
