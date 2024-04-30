@@ -15,9 +15,7 @@ function App() {
       {userData && (
         <div id="usercard">
           <p>User ID: {userData.id}</p>
-          <p>First Name: {userData.first_name}</p>
-          <p>Last Name: {userData.last_name}</p>
-          <p>Username: {userData.username}</p>
+          <p>Fullname: {userData.first_name} {userData.last_name}</p>
         </div>
       )}
     </div>
