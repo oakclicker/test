@@ -53,7 +53,11 @@ function App() {
 
   return (
     <div className="App">
-      {userData && (
+
+      {activeWindow === 'App' && (
+        <div className="app-window">
+          <h2>App Window</h2>
+          {userData && (
         <div id="usercard">
           <div className="user-panel">
             <img src={userData.avatar} alt="Avatar" className="avatar" />
@@ -66,10 +70,6 @@ function App() {
           </button>
         </div>
       )}
-
-      {activeWindow === 'App' && (
-        <div className="app-window">
-          <h2>App Window</h2>
         </div>
       )}
 
