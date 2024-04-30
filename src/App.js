@@ -15,11 +15,9 @@ function App() {
       {userData && (
         <div id="usercard">
           <p>User ID: {userData.id}</p>
-          <p>Is Bot: {userData.isBot ? 'Yes' : 'No'}</p>
           <p>First Name: {userData.first_name}</p>
           <p>Last Name: {userData.last_name}</p>
           <p>Username: {userData.username}</p>
-          <p>Language Code: {userData.language_code}</p>
         </div>
       )}
     </div>
