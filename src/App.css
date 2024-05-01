@@ -86,7 +86,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 20px; /* Закругление углов кнопок */
-  width: 20%; /* Устанавливаем ширину кнопки в 20% от ширины контейнера */
+  width: 25%; /* Устанавливаем ширину кнопки в 20% от ширины контейнера */
   box-sizing: border-box; /* Учитываем внутренние отступы в общей ширине */
   display: flex;
   flex-direction: column;

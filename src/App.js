@@ -63,7 +63,7 @@ function App() {
             <img src={userData.avatar} alt="Avatar" className="avatar transparent" />
             <div className='userInfo_container transparent'>
               <p className='transparent'>ID: {userData.id}</p>
-              <p> className='transparent'Fullname: {userData.first_name} {userData.last_name}</p>
+              <p className='transparent'>Fullname: {userData.first_name} {userData.last_name}</p>
             </div>
             <p className='transparent'></p>
           </div>
