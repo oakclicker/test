@@ -10,10 +10,10 @@ import MineActiveIcon from './icons/active/mine-active.png';
 import AppActiveIcon from './icons/active/menu-active.png';
 import EarnActiveIcon from './icons/active/tasks-active.png';
 import FriendsActiveIcon from './icons/active/friends-active.png';
-import Rating from './components/Rating';
-import Mine from './components/Mine';
-import Earn from './components/Earn';
-import Friends from './components/Friends';
+import Rating from './components/Rating/Rating';
+import Mine from './components/Mine/Mine';
+import Earn from './components/Earn/Earn';
+import Friends from './components/Friends/Friends';
 
 function App() {
   const [userData, setUserData] = useState(null);

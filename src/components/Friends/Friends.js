@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Friends.css';
+import './Friends.css';
 import Invite from './friends_components/invite.js';
 import Friends_list from './friends_components/friends_list.js'
 

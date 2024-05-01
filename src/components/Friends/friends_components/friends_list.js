@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Friends.css';
+import '../Friends.css';
 import user from './friends_icons/User_icon.svg';
 import coin_icon from '../friends_components/friends_icons/coin.png';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Friends.css';
+import '../Friends.css';
 import present_icon from '../friends_components/friends_icons/present.svg';
 import coin_icon from '../friends_components/friends_icons/coin.png';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Earn.css';
+import './Earn.css';
 
 const Earn = () => {
   return (
