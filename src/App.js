@@ -20,7 +20,8 @@ import MainCoin from './icons/main_coin.png';
 function App() {
   const [userData, setUserData] = useState(null);
   const [balance, setBalance] = useState(0);
-  const [activeWindow, setActiveWindow] = useState('App'); // Задаем активное окно по умолчанию
+  const [activeWindow, setActiveWindow] = useState('App');
+  const [buttonPressed, setButtonPressed] = useState(false);
 
   useEffect(() => {
     const telegramApp = window.Telegram.WebApp;
@@ -30,10 +31,14 @@ function App() {
 
   const handleAddBalance = () => {
     setBalance(prevBalance => prevBalance + 1);
+    setButtonPressed(true);
+    setTimeout(() => {
+      setButtonPressed(false);
+    }, 200);
   };
 
   const handleWindowChange = (windowName) => {
-    setActiveWindow(prevWindow => (prevWindow === windowName ? null : windowName));
+    setActiveWindow(prevWindow => (prevWindow !== windowName ? windowName : prevWindow));
   };
 
   const getIcon = (windowName) => {
@@ -55,31 +60,29 @@ function App() {
 
   return (
     <div className="App">
-
       {activeWindow === 'App' && (
         <div className="app-window">
           {userData && (
-
-        <div id="usercard">
-          <div className="user-panel">
-            <img src={userData.avatar} alt="Avatar" className="avatar transparent" />
-            <div className='userInfo_container transparent'>
-              <p className='transparent'>{userData.first_name} {userData.last_name}</p>
-              <p className='transparent user_id'>ID: {userData.id}</p>
+            <div id="usercard">
+              <div className="user-panel">
+                <img src="https://i.postimg.cc/1XLJ3s05/906c86c8-a57b-4245-a807-b6a904106875.jpg" alt="Avatar" className="avatar transparent" />
+                <div className='userInfo_container transparent'>
+                  <p className='transparent'>{userData.first_name} {userData.last_name}</p>
+                  <p className='transparent user_id'>ID: {userData.id}</p>
+                </div>
+              </div>
+              
+              <div className='user_balance_container transparent'>
+                <p className="balance">
+                  {balance}
+                  <img src={MainCoin} alt='coin' />
+                </p>
+                <button className={`add-balance-button ${buttonPressed && 'pressed'}`} onClick={handleAddBalance}>
+                  <img src={MainButton} alt='Main Button' className='transparent' />
+                </button>
+              </div>
             </div>
-          </div>
-          
-          <div className='user_balance_container transparent'>
-            <p className="balance">
-              {balance}
-              <img src={MainCoin} alt='coin' />
-            </p>
-            <button className="add-balance-button" onClick={handleAddBalance}>
-              <img src={MainButton} alt='Main Button' className='transparent' />
-            </button>
-          </div>
-        </div>
-      )}
+          )}
         </div>
       )}
 
