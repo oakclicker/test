@@ -58,15 +58,17 @@ function App() {
       {activeWindow === 'App' && (
         <div className="app-window">
           {userData && (
+
         <div id="usercard">
           <div className="user-panel">
             <img src={userData.avatar} alt="Avatar" className="avatar transparent" />
             <div className='userInfo_container transparent'>
-              <p className='transparent'>ID: {userData.id}</p>
-              <p className='transparent'>Fullname: {userData.first_name} {userData.last_name}</p>
+              <p className='transparent'>{userData.first_name} {userData.last_name}</p>
+              <p className='transparent user_id'>ID: {userData.id}</p>
             </div>
             <p className='transparent'></p>
           </div>
+          
           <div className='user_balance_container transparent'>
             <p className="balance">Balance: {balance}</p>
             <button className="add-balance-button" onClick={handleAddBalance}>

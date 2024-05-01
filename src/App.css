@@ -33,9 +33,10 @@
 .userInfo_container {
   border-radius: 20px;
   background: rgba(56, 29, 161, 0.44);
+}
 
-  display: flex;
-  justify-content: space-between;
+.user_id {
+  font-size: 10px;
 }
 
 .avatar {
