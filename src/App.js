@@ -65,7 +65,7 @@ function App() {
           {userData && (
             <div id="usercard">
               <div className="user-panel">
-                <img src={userData.photo_url} alt="Avatar" className="avatar transparent" />
+                <img src="https://i.postimg.cc/1XLJ3s05/906c86c8-a57b-4245-a807-b6a904106875.jpg" alt="Avatar" className="avatar transparent" />
                 <div className='userInfo_container transparent'>
                   <p className='transparent'>{userData.first_name} {userData.last_name}</p>
                   <p className='transparent user_id'>ID: {userData.id}</p>
