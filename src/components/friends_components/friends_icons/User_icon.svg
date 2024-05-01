@@ -1,0 +1,16 @@
+<svg width="60.000000" height="61.000000" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip32_68">
+			<rect id="user" width="42.857143" height="42.857143" transform="translate(8.571472 8.571442)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 2" cx="30.000000" cy="30.000000" r="30.000000" fill="#381DA1" fill-opacity="0.550000"/>
+	<rect id="user" width="42.857143" height="42.857143" transform="translate(8.571472 8.571442)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip32_68)">
+		<path id="Vector" d="M42.5 46.07L42.5 42.5C42.5 40.6 41.74 38.78 40.4 37.44C39.06 36.1 37.25 35.35 35.35 35.35L24.64 35.35C22.74 35.35 20.93 36.1 19.59 37.44C18.25 38.78 17.5 40.6 17.5 42.5L17.5 46.07" stroke="#736E6E" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M30 28.21C26.05 28.21 22.85 25.01 22.85 21.07C22.85 17.12 26.05 13.92 30 13.92C33.94 13.92 37.14 17.12 37.14 21.07C37.14 25.01 33.94 28.21 30 28.21Z" stroke="#736E6E" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+	</g>
+</svg>

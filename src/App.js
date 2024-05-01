@@ -76,23 +76,23 @@ function App() {
       <div className="navigation">
         <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
           <img src={getIcon('Rating')} alt="Rating Icon" />
-          Rating
+          <p className='menu__text'>Rating</p>
         </button>
         <button className={`nav-button ${activeWindow === 'Mine' && 'active'}`} onClick={() => handleWindowChange('Mine')}>
           <img src={getIcon('Mine')} alt="Mine Icon" />
-          Mine
+          <p className='menu__text'>Mine</p>
         </button>
         <button className={`nav-button ${activeWindow === 'App' && 'active'}`} onClick={() => handleWindowChange('App')}>
           <img src={getIcon('App')} alt="App Icon" />
-          App
+          <p className='menu__text'>App</p>
         </button>
         <button className={`nav-button ${activeWindow === 'Earn' && 'active'}`} onClick={() => handleWindowChange('Earn')}>
           <img src={getIcon('Earn')} alt="Earn Icon" />
-          Earn
+          <p className='menu__text'>Earn</p>
         </button>
         <button className={`nav-button ${activeWindow === 'Friends' && 'active'}`} onClick={() => handleWindowChange('Friends')}>
           <img src={getIcon('Friends')} alt="Friends Icon" />
-          Friends
+          <p className='menu__text'>Friends</p>
         </button>
       </div>
 
