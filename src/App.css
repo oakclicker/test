@@ -66,15 +66,9 @@
   transition: transform 0.2s ease;
 }
 
-.add-balance-button:hover {
-  transform: scale(1.1);
-}
-
-.add-balance-button.pressed {
+.add-balance-button:active {
   transform: scale(0.9);
 }
-
-
 
 .app-window {
   padding: 20px;
