@@ -29,7 +29,7 @@
 .user-panel {
   margin-bottom: 20px;
   margin: 20px 10px 50px 10px;
-  padding: 10px 100px 10px 40px;
+  padding: 10px 70px 10px 40px;
   border-radius: 20px;
   background: rgba(56, 29, 161, 1) !important;
 
@@ -40,7 +40,9 @@
 
 .userInfo_container {
   border-radius: 20px;
-  margin-top: 8px;
+  margin-top: 10px;
+
+  text-align: left;
 }
 
 .user_name {
