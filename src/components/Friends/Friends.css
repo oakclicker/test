@@ -56,6 +56,16 @@ button {
    margin-right: 10px;
 }
 
+.invite_title {
+   font-family: "Aldrich", sans-serif;
+   font-size: 18px;
+}
+
+.check {
+   font-family: "Aldrich", sans-serif;
+   font-size: 15px;
+}
+
 .cash {
    margin-top: 5px;
 }

@@ -14,6 +14,7 @@ import Rating from './components/Rating/Rating';
 import Mine from './components/Mine/Mine';
 import Earn from './components/Earn/Earn';
 import Friends from './components/Friends/Friends';
+import MainButton from './icons/main_button.png';
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -56,18 +57,22 @@ function App() {
 
       {activeWindow === 'App' && (
         <div className="app-window">
-          <h2>App Window</h2>
           {userData && (
         <div id="usercard">
           <div className="user-panel">
             <img src={userData.avatar} alt="Avatar" className="avatar" />
-            <p>User ID: {userData.id}</p>
-            <p>Fullname: {userData.first_name} {userData.last_name}</p>
+            <div className='userInfo_container'>
+              <p>ID: {userData.id}</p>
+              <p>Fullname: {userData.first_name} {userData.last_name}</p>
+            </div>
+            <p></p>
           </div>
-          <p className="balance">Balance: {balance}</p>
-          <button className="add-balance-button" onClick={handleAddBalance}>
-            Add Balance
-          </button>
+          <div className='user_balance_container transparent'>
+            <p className="balance">Balance: {balance}</p>
+            <button className="add-balance-button" onClick={handleAddBalance}>
+              <img src={MainButton} alt='Main Button' className='transparent' />
+            </button>
+          </div>
         </div>
       )}
         </div>

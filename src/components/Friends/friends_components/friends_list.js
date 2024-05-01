@@ -3,10 +3,10 @@ import '../Friends.css';
 import user from './friends_icons/User_icon.svg';
 import coin_icon from '../friends_components/friends_icons/coin.png';
 
-const Friends_list = () => {
+const Friends_List = () => {
   return (
     <div className='friend_card'>
-        <img src={user} className='user_icon' />
+        <img src={user} className='user_icon' alt='User' />
         <div className='friend_text transparent'>
           <p className='friend_name transparent'>Friend Name</p>
           <div className='friend_info transparent'>
@@ -22,4 +22,4 @@ const Friends_list = () => {
   );
 }
 
-export default Friends_list;
+export default Friends_List;
