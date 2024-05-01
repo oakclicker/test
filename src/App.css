@@ -53,7 +53,18 @@
 }
 
 .balance {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.balance img {
+  width: 16px; /* половина от исходного размера */
+  height: 16px; /* половина от исходного размера */
+  margin-right: 5px; /* добавим небольшое расстояние между иконкой и текстом */
+}
+
+.balance p {
+  font-size: 24px;
 }
 
 .add-balance-button {
