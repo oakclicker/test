@@ -62,7 +62,7 @@ function App() {
           <div className="user-panel">
             <img src={userData.avatar} alt="Avatar" className="avatar" />
             <div className='userInfo_container'>
-              <p>ID: {userData.id}</p>
+              <p>User ID: {userData.id}</p>
               <p>Fullname: {userData.first_name} {userData.last_name}</p>
             </div>
             <p></p>
