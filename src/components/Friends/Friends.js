@@ -1,7 +1,7 @@
 import React from 'react';
 import './Friends.css';
 import Invite from './friends_components/invite.js';
-import Friends_list from './friends_components/friends_list.js'
+import FriendsList from './friends_components/friends_list.js'
 
 const Friends = () => {
   return (
