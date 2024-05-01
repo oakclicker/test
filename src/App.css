@@ -19,6 +19,7 @@
 
 .menu__text {
   font-family: "Aldrich", sans-serif;
+  font-size: 12px;
   background-color: transparent;
 }
 
@@ -43,8 +44,8 @@
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
