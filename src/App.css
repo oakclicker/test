@@ -28,8 +28,8 @@
 
 .user-panel {
   margin-bottom: 20px;
-  margin: 20px 10px 50px 10px;
-  padding: 10px 70px 10px 40px;
+  margin: 10px 10px 35px 10px;
+  padding: 10px 85px 10px 40px;
   border-radius: 20px;
   background: rgba(56, 29, 161, 1) !important;
 
@@ -40,7 +40,7 @@
 
 .userInfo_container {
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 12px;
 
   text-align: left;
 }
@@ -50,7 +50,7 @@
 }
 
 .user_id {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .avatar {
@@ -68,6 +68,10 @@
   height: 20px;
   margin-right: 5px;
   margin-top: 5px;
+}
+
+.balance {
+  font-size: 18px;
 }
 
 .balance p {
