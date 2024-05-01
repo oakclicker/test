@@ -60,12 +60,12 @@ function App() {
           {userData && (
         <div id="usercard">
           <div className="user-panel">
-            <img src={userData.avatar} alt="Avatar" className="avatar" />
-            <div className='userInfo_container'>
-              <p>User ID: {userData.id}</p>
-              <p>Fullname: {userData.first_name} {userData.last_name}</p>
+            <img src={userData.avatar} alt="Avatar" className="avatar transparent" />
+            <div className='userInfo_container transparent'>
+              <p className='transparent'>ID: {userData.id}</p>
+              <p> className='transparent'Fullname: {userData.first_name} {userData.last_name}</p>
             </div>
-            <p></p>
+            <p className='transparent'></p>
           </div>
           <div className='user_balance_container transparent'>
             <p className="balance">Balance: {balance}</p>
