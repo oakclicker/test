@@ -20,7 +20,7 @@ import MainCoin from './icons/main_coin.png';
 function App() {
   const [userData, setUserData] = useState(null);
   const [balance, setBalance] = useState(0);
-  const [activeWindow, setActiveWindow] = useState('App'); // Задаем активное окно по умолчанию
+  const [activeWindow, setActiveWindow] = useState('App'); 
 
   useEffect(() => {
     const telegramApp = window.Telegram.WebApp;
@@ -33,8 +33,8 @@ function App() {
   };
 
   const handleWindowChange = (windowName) => {
-    setActiveWindow(prevWindow => (prevWindow === windowName ? null : windowName));
-  };
+    setActiveWindow(prevWindow => (prevWindow !== windowName ? windowName : prevWindow));
+  };  
 
   const getIcon = (windowName) => {
     switch (windowName) {
