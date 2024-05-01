@@ -33,6 +33,8 @@
 .userInfo_container {
   border-radius: 20px;
   background: rgba(56, 29, 161, 0.44);
+
+  margin-right: 40px;
 }
 
 .user_id {

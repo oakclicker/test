@@ -15,6 +15,7 @@ import Mine from './components/Mine/Mine';
 import Earn from './components/Earn/Earn';
 import Friends from './components/Friends/Friends';
 import MainButton from './icons/main_button.png';
+import MainCoin from './icons/main_coin.png';
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -70,7 +71,10 @@ function App() {
           </div>
           
           <div className='user_balance_container transparent'>
-            <p className="balance">Balance: {balance}</p>
+            <p className="balance">
+              {balance}
+              <img src={MainCoin} alt='coin' />
+            </p>
             <button className="add-balance-button" onClick={handleAddBalance}>
               <img src={MainButton} alt='Main Button' className='transparent' />
             </button>
