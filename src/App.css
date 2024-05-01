@@ -24,6 +24,7 @@
 
 .user-panel {
   margin-bottom: 20px;
+  margin: 0 40px 20px 40px;
 
   color: #fff;
   display: flex;
@@ -32,7 +33,7 @@
 
 .userInfo_container {
   border-radius: 20px;
-  background: rgba(56, 29, 161, 0.44);
+  background: rgba(56, 29, 161, 1);
 
   margin-right: 40px;
 }
@@ -89,7 +90,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 20px; /* Закругление углов кнопок */
-  width: 25%; /* Устанавливаем ширину кнопки в 20% от ширины контейнера */
+  width: 18%; /* Устанавливаем ширину кнопки в 20% от ширины контейнера */
   box-sizing: border-box; /* Учитываем внутренние отступы в общей ширине */
   display: flex;
   flex-direction: column;
