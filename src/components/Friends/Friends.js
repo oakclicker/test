@@ -15,11 +15,11 @@ const Friends = () => {
         
         <div className='secnod_section_friend'>
         <h2>Friends list</h2>
-          <Friends_list />
-          <Friends_list />
-          <Friends_list />
-          <Friends_list />
-          <Friends_list />
+          <FriendsList />
+          <FriendsList />
+          <FriendsList />
+          <FriendsList />
+          <FriendsList />
         </div>
 
     </div>
