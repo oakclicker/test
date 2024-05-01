@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+
   background-color: #2A1D5A;
 }
 
@@ -15,6 +16,8 @@
   background-color: aqua;
   font-family: "Aldrich", sans-serif;
   position: relative;
+
+  
 }
 
 .menu__text {
@@ -25,7 +28,9 @@
 
 .user-panel {
   margin-bottom: 20px;
-  margin: 0 40px 20px 40px;
+  margin: 0 80px 20px 80px;
+
+  background: rgba(56, 29, 161, 1) !important;
 
   color: #fff;
   display: flex;
@@ -34,9 +39,7 @@
 
 .userInfo_container {
   border-radius: 20px;
-  background: rgba(56, 29, 161, 1);
-
-  margin-right: 40px;
+  margin-top: 15px;
 }
 
 .user_id {
