@@ -26,7 +26,7 @@
 
 .user-panel {
   margin: 10px 10px 20px 10px;
-  padding: 10px 10px 10px 40px;
+  padding: 10px 10px 10px 10px;
   border-radius: 20px;
   background: rgba(56, 29, 161, 1) !important;
   color: #fff;
@@ -61,6 +61,7 @@
 
 .balance {
   display: flex;
+  text-align: center;
 }
 
 .balance img {
