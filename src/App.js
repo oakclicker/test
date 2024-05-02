@@ -64,39 +64,40 @@ function App() {
     <div className="App">
       {activeWindow === 'App' && (
         <div className="app-window">
-          {userData && (
-            <div id="usercard">
-              <div className="user-panel">
-                <img src={userData.photo_url} alt="Avatar" className="avatar transparent" />
-                <div className='userInfo_container transparent'>
-                  <p className='transparent user_name'>{userData.first_name} {userData.last_name}</p>
-                  <p className='transparent user_id'>ID: {userData.id} | {userData.photo_url}</p>
-                </div>
-                <p></p>
+        {userData && (
+          <div id="usercard">
+            <div className="user-panel">
+              {userData.photo_url && <img src={userData.photo_url} alt="Avatar" className="avatar transparent" />}
+              <div className='userInfo_container transparent'>
+                <p className='transparent user_name'>{userData.first_name} {userData.last_name}</p>
+                <p className='transparent user_id'>ID: {userData.id} | {userData.photo_url}</p>
               </div>
-              
-              <div className='user_balance_container transparent'>
-                <p className="balance">
-                  <p className='balance_counter'>{balance}</p>
-                  <img src={MainCoin} alt='coin' />
-                </p>
-                <button className={`add-balance-button ${buttonPressed && 'pressed'}`} onClick={handleAddBalance}>
-                  <img src={MainButton} alt='Main Button' className='transparent' />
-                </button>
-              </div>
+              <p></p>
+            </div>
+                      
+            <div className='user_balance_container transparent'>
+              <p className="balance">
+                <p className='balance_counter'>{balance}</p>
+                <img src={MainCoin} alt='coin' />
+              </p>
+              <button className={`add-balance-button ${buttonPressed && 'pressed'}`} onClick={handleAddBalance}>
+                <img src={MainButton} alt='Main Button' className='transparent' />
+              </button>
+            </div>
 
-              <div className='Strange_line_container'>
-                <p className='light_counter'>
-                  <img src={Light} alt='light' className='light_icon' />
-                  1,000(+2)<span className='grey_text'>/1,000</span>
-                </p>
+            <div className='Strange_line_container'>
+              <p className='light_counter'>
+                <img src={Light} alt='light' className='light_icon' />
+                1,000(+2)<span className='grey_text'>/1,000</span>
+              </p>
 
-                <div className='light_counter_line'>
-                  {/* тут линия */}
-                </div>
+              <div className='light_counter_line'>
+                {/* тут линия */}
               </div>
             </div>
-          )}
+          </div>
+        )}
+
         </div>
       )}
 
