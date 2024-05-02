@@ -72,11 +72,12 @@ function App() {
                   <p className='transparent user_name'>{userData.first_name} {userData.last_name}</p>
                   <p className='transparent user_id'>ID: {userData.id}</p>
                 </div>
+                <p></p>
               </div>
               
               <div className='user_balance_container transparent'>
                 <p className="balance">
-                  {balance}
+                  <p className='balance_counter'>{balance}</p>
                   <img src={MainCoin} alt='coin' />
                 </p>
                 <button className={`add-balance-button ${buttonPressed && 'pressed'}`} onClick={handleAddBalance}>
