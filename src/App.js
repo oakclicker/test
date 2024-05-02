@@ -16,6 +16,8 @@ import Earn from './components/Earn/Earn';
 import Friends from './components/Friends/Friends';
 import MainButton from './icons/main_button.png';
 import MainCoin from './icons/main_coin.png';
+import Light from './icons/light.svg';
+
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -80,6 +82,17 @@ function App() {
                 <button className={`add-balance-button ${buttonPressed && 'pressed'}`} onClick={handleAddBalance}>
                   <img src={MainButton} alt='Main Button' className='transparent' />
                 </button>
+              </div>
+
+              <div className='Strange_line_container'>
+                <p className='light_counter'>
+                  <img src={Light} alt='light' className='light_icon' />
+                  1,000(+2)<span className='grey_text'>/1,000</span>
+                </p>
+
+                <div className='light_counter_line'>
+                  {/* тут линия */}
+                </div>
               </div>
             </div>
           )}

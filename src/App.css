@@ -27,8 +27,7 @@
 }
 
 .user-panel {
-  margin-bottom: 20px;
-  margin: 10px 10px 35px 10px;
+  margin: 10px 10px 20px 10px;
   padding: 10px 85px 10px 40px;
   border-radius: 20px;
   background: rgba(56, 29, 161, 1) !important;
@@ -39,7 +38,7 @@
 
 .userInfo_container {
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 12px;
 
   text-align: left;
 }
@@ -146,6 +145,28 @@
 
 /* ------------------------------- */
 
+.light_icon {
+  height: 20px;
+  width: 20px;
 
+  margin-right: 5px;
+}
 
+.Strange_line_container {
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 14px;
 
+  color: #fff;
+}
+
+.grey_text {
+  color: #B7B7B7 !important;
+}
+
+.light_counter_line {
+  width: 100%;
+  height: 12px;
+  margin: 12px 10px 0 10px;
+  background: linear-gradient(270.00deg, rgba(10, 228, 242, 0.65),rgba(6, 140, 140, 0.65) 100%);
+}
