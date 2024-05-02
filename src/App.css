@@ -36,13 +36,14 @@
 
 .userInfo_container {
   border-radius: 20px;
-  margin-top: 17px;
+  margin-top: 10px;
 
   text-align: left;
 }
 
 .user_name {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .user_id {
@@ -62,6 +63,7 @@
 .balance {
   display: flex;
   text-align: center;
+  margin: 0 auto;
 }
 
 .balance img {
@@ -167,7 +169,7 @@
 }
 
 .light_counter_line {
-  width: 100%;
+  width: 100vh;
   height: 12px;
   margin: 0 15px;
   background: linear-gradient(270.00deg, rgba(10, 228, 242, 0.65),rgba(6, 140, 140, 0.65) 100%);
