@@ -111,8 +111,7 @@
   border-radius: 15px;
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(to top, #170F36, #381DA1); /* Градиентный фон */
-  flex-wrap: wrap; /* Разрешение переноса кнопок на следующую строку */
+  background: linear-gradient(0.00deg, rgba(23, 15, 54, 0.4),rgba(56, 29, 161, 0.4) 100%);  flex-wrap: wrap; /* Разрешение переноса кнопок на следующую строку */
 }
 
 .nav-button {
@@ -147,6 +146,7 @@
 
 /* ------------------------------- */
 
+
 .light_icon {
   height: 20px;
   width: 20px;
@@ -166,8 +166,9 @@
 }
 
 .light_counter_line {
-  width: 360px;
+  width: 100%;
   height: 12px;
-  margin: 0 auto;
+  margin: 0 15px;
   background: linear-gradient(270.00deg, rgba(10, 228, 242, 0.65),rgba(6, 140, 140, 0.65) 100%);
+  border-radius: 15px;
 }
