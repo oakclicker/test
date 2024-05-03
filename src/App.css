@@ -165,10 +165,11 @@ body {
 }
 
 .Strange_line_container {
+  margin-top: 5%;
   text-align: left;
   color: #fff;
   font-size: 12px;
-  display: flex;
+  /* display: flex; */
 }
 
 .grey_text {

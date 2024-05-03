@@ -17,11 +17,12 @@ import Friends from './components/Friends/Friends';
 import MainButton from './icons/main_button.png';
 import MainCoin from './icons/main_coin.png';
 import Light from './icons/light.svg';
-
+import ProgressBar from './components/ProgressBar/ProgressBar'; // Импорт ProgressBar
 
 function App() {
   const [userData, setUserData] = useState(null);
   const [balance, setBalance] = useState(10000000);
+  const [energy, setEnergy] = useState(1000);
   const [activeWindow, setActiveWindow] = useState('App');
   const [buttonPressed, setButtonPressed] = useState(false);
 
@@ -31,14 +32,32 @@ function App() {
     setUserData(userData);
   }, []);
 
+  useEffect(() => {
+    const energyInterval = setInterval(() => {
+      setEnergy(prevEnergy => {
+        if (prevEnergy < 999) {
+          return prevEnergy + 2;
+        } else {
+          return 1000; // Ограничение до 1000
+        }
+      });
+    }, 1000);
+
+    return () => clearInterval(energyInterval);
+  }, []);
+
   const handleAddBalance = () => {
-    setBalance(prevBalance => prevBalance + 1);
     setButtonPressed(true);
     setTimeout(() => {
       setButtonPressed(false);
     }, 200);
+  
+    if (energy > 0) {
+      setEnergy(prevEnergy => prevEnergy - 1);
+      setBalance(prevBalance => prevBalance + 1);
+    }
   };
-
+  
   const handleWindowChange = (windowName) => {
     setActiveWindow(prevWindow => (prevWindow !== windowName ? windowName : prevWindow));
   };
@@ -90,16 +109,13 @@ function App() {
               <div className='Strange_line_container'>
                   <p className='light_counter'>
                     <img src={Light} alt='light' className='light_icon' />
-                    1,000(+2)<span className='grey_text'>/1,000</span>
+                    {energy}(+2)<span className='grey_text'>/1,000</span>
                   </p>
 
-                  <div className='light_counter_line'>
-                    {/* тут линия */}
-                  </div>
+                  <ProgressBar value={energy} max={1000} /> {/* Использование ProgressBar */}
                 </div>
         </div>
       )}
-
 
       <div className="navigation">
         <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
