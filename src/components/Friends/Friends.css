@@ -8,12 +8,18 @@ button {
 }
 
 /* -----------------FRIENDS----------------- */
+.invite__container,
+.secnod_section_friend {
+   margin-bottom: 80px; /* Добавлено для отступа снизу */
+}
+
 
 .invite__container {
    color: #fff;
    margin-top: 30px;
-
    letter-spacing: 1px;
+   overflow-y: auto; /* Добавлено для вертикального скролла */
+   max-height: calc(100vh - 30px); /* Максимальная высота, равная высоте главного окна с учетом отступа сверху */
 }
 
 .first_section_friend {
@@ -23,6 +29,8 @@ button {
 
 .secnod_section_friend {
    margin-top: 20px;
+   overflow-y: auto; /* Добавлено для вертикального скролла */
+   max-height: calc(100vh - 30px); /* Максимальная высота, равная высоте главного окна с учетом отступа сверху */
 }
 
 /* --------------INVITE-------------- */
@@ -31,22 +39,18 @@ button {
    color: #fff;
    display: flex;
    justify-content: space-between;
-
    width: 280px;
    height: 70px;
    margin: 25px auto 0px auto;
-
    border: 1px solid transparent;
    border-radius: 15px;
    background: rgb(56, 29, 161);
-
    cursor: pointer;
 }
 
 .present_icon {
    width: 40px;
    height: 40px;
-
    margin-top: 15px;
    margin-left: 15px;
 }
@@ -80,11 +84,9 @@ button {
    border: 1px solid transparent;
    border-radius: 15px;
    background: rgb(56, 29, 161);
-   
    width: 340px;
    height: 70px;
    margin: 20px auto;
-
    display: flex;
    justify-content: space-between;
 }
@@ -94,7 +96,6 @@ button {
    height: 40px;
    margin-left: 15px;
    margin-top: 15px;
-
    border: 1px solid rgba(56, 29, 161, 0.55);
    border-radius: 50%;
 }

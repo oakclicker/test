@@ -3,12 +3,21 @@
 body {
   background-color: #2A1D5A;
   font-family: "Aldrich", sans-serif;
+  overflow: hidden;
 }
 
 .App {
   text-align: center;
   background-color: #2A1D5A;
   position: relative;
+}
+
+.app-window {
+  overflow: hidden;
+}
+
+.navigation {
+  overflow: hidden;
 }
 
 .user-panel {
