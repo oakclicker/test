@@ -46,6 +46,18 @@ body {
   margin-right: 5px;
 }
 
+.balance-container {
+  display: flex;
+  justify-content: center; /* Центрирование баланса */
+  align-items: center;
+  flex-direction: column;
+}
+
+.user_balance_container {
+  text-align: center; /* Центрирование текста баланса */
+}
+
+
 .add-balance-button {
   margin-top: 10px;
   padding: 8px 16px;
@@ -56,17 +68,6 @@ body {
   transition: transform 0.1s ease;
   user-select: none;
 }
-
-.Strange_line_container {
-  margin-top: 50px;
-  text-align: left; /* Изменено на left */
-  color: #fff;
-}
-
-.user_balance_container {
-  text-align: center; /* Добавлено для центрирования текста внутри */
-}
-
 
 .add-balance-button:active {
   transform: scale(0.9);
@@ -124,6 +125,12 @@ body {
 .nav-button img {
   max-width: 80%;
   margin-bottom: 4px;
+}
+
+.Strange_line_container {
+  margin-top: 50px;
+  text-align: left;
+  color: #fff;
 }
 
 .light_counter_line {
