@@ -4,10 +4,12 @@
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
+    /* justify-content: center; */
+    /* display: block; */
   }
   
   .progress {
     height: 100%;
-    background: linear-gradient(to right, red, orange, yellow, green); /* радужный градиент */
+    background: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 255, 200)); /* радужный градиент */
   }
   

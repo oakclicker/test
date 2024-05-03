@@ -106,6 +106,7 @@ function App() {
                   </button>
                 </div>
               </div>
+
               <div className='Strange_line_container'>
                   <p className='light_counter'>
                     <img src={Light} alt='light' className='light_icon' />
@@ -113,10 +114,11 @@ function App() {
                   </p>
 
                   <ProgressBar value={energy} max={1000} /> {/* Использование ProgressBar */}
-                </div>
+              </div>
         </div>
-      )}
 
+        
+      )}
       <div className="navigation">
         <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
           <img src={getIcon('Rating')} alt="Rating Icon" />
