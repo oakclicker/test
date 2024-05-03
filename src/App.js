@@ -61,14 +61,20 @@ function App() {
   };
 
   return (
-<div className="App">
-  {activeWindow === 'App' && (
-    <div className="app-window">
-      {userData && (
-        <div id="usercard">
-          <div className="user-panel">
-            {/* Остальные элементы здесь */}
-
+    <div className="App">
+      {activeWindow === 'App' && (
+        <div className="app-window">
+        {userData && (
+          <div id="usercard">
+            <div className="user-panel">
+               <img src={`https://t.me/i/userpic/320/${userData.username}.jpg`} alt="Avatar" className="avatar transparent" />
+              <div className='userInfo_container transparent'>
+                <p className='transparent user_name'>{userData.first_name} {userData.last_name}</p>
+                <p className='transparent user_id'>ID: {userData.id}</p>
+              </div>
+              <p></p>
+            </div>
+                      
             <div className='user_balance_container transparent'>
               <p className="balance">
                 <p className='balance_counter'>{balance}</p>
@@ -78,22 +84,22 @@ function App() {
                 <img src={MainButton} alt='Main Button' className='transparent' />
               </button>
             </div>
-          </div>
-                    
-          <div className='Strange_line_container'>
-            <p className='light_counter'>
-              <img src={Light} alt='light' className='light_icon' />
-              1,000(+2)<span className='grey_text'>/1,000</span>
-            </p>
 
-            <div className='light_counter_line'>
-              {/* тут линия */}
+            <div className='Strange_line_container'>
+              <p className='light_counter'>
+                <img src={Light} alt='light' className='light_icon' />
+                1,000(+2)<span className='grey_text'>/1,000</span>
+              </p>
+
+              <div className='light_counter_line'>
+                {/* тут линия */}
+              </div>
             </div>
           </div>
+        )}
+
         </div>
       )}
-    </div>
-  )}
 
       <div className="navigation">
         <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
