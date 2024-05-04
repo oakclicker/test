@@ -31,19 +31,30 @@ const Mine = () => {
         <img src={MainCoin} alt='coin' />
       </p>
 
-      <div className='power_section'>
-        <h3 className='mine_section_name'>Power</h3>
 
-        <MineItem />
-        <MineItem />
-        <MineItem />
-      </div>
+      <div className='scroll'>
+        <div className='power_section scroll'>
+          <h3 className='mine_section_name'>Power</h3>
 
-      <div className='power_section last_power_section'>
-        <h3 className='mine_section_name'>Mining</h3>
+          <MineItem />
+          <MineItem />
+          <MineItem />
+        </div>
 
-        <MineItem />
-        
+        <div className='power_section last_power_section'>
+          <h3 className='mine_section_name'>Mining</h3>
+
+          <MineItem />
+          <MineItem />
+          <MineItem />
+          <MineItem />
+          <MineItem />
+          <MineItem />
+          <MineItem />
+          <MineItem />
+          <MineItem />
+          <MineItem />
+        </div>
       </div>
 
     </div>

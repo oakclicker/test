@@ -108,7 +108,7 @@ ul {
   margin-top: 20px;
 }
 
-.task4 {
+.task4_bottom {
   margin-bottom: 80px;
 }
 
@@ -135,7 +135,7 @@ ul {
 
 .modal_box {
   color: #fff;
-  padding: 25px 35px;
+  padding: 25px 20px;
   margin: 30px 5px;
   width: 350px;
   height: 600px;

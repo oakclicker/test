@@ -84,7 +84,7 @@ const Earn = () => {
           </a>
           
           <a className='task4 tasks_link' href='#.'>
-          <h className='task_list'>
+          <h className='task_list task4_bottom'>
             <img src={VK} alt='Calendar' className='task_img' />
               <div className='task_text'>
                 <p className='task_name'>Subscribe Vk</p>
