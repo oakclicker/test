@@ -113,7 +113,7 @@ function App() {
                     {energy}(+2)<span className='grey_text'>/1,000</span>
                   </p>
 
-                  <ProgressBar value={energy} max={1000} /> {/* Использование ProgressBar */}
+                  <ProgressBar value={energy} max={1000} />
               </div>
         </div>
 

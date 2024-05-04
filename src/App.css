@@ -49,6 +49,10 @@ body {
   margin-right: 10px;
 }
 
+.user_name {
+  margin-bottom: 3px;
+}
+
 .id_text {
   font-size: 15px;
 }
