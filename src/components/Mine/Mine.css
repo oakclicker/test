@@ -27,7 +27,11 @@
 .scroll {
    overflow-y: auto;
    max-height: calc(100vh - 30px);
-   margin-bottom: 80px; 
+
+}
+
+.mb {
+   margin-top: 80px; 
 }
 
 .power_section {

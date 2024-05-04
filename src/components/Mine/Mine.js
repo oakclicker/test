@@ -25,7 +25,7 @@ const Mine = () => {
           </div>
         </div>
       </div>
-      
+
       <div className='scroll'>
         <p className="balance">
           <p className='balance_counter'>10 500,00 </p>
@@ -53,7 +53,7 @@ const Mine = () => {
           </div>
 
       </div>
-
+      <p className='mb'></p>
     </div>
   );
 }
