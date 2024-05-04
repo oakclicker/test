@@ -126,7 +126,7 @@ ul {
   display: grid;
   align-items: center;
   justify-content: center;
-  overflow-y: auto;
+  overflow-y: hidden;
 
   visibility: hidden;
   opacity: 0;

@@ -49,12 +49,8 @@ const Mine = () => {
           <MineItem />
           <MineItem />
           <MineItem />
-          <MineItem />
-          <MineItem />
-          <MineItem />
-          <MineItem />
-          <MineItem />
         </div>
+
       </div>
 
     </div>
