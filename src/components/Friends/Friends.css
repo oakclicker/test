@@ -18,8 +18,8 @@ button {
    color: #fff;
    margin-top: 30px;
    letter-spacing: 1px;
-   overflow-y: auto; /* Добавлено для вертикального скролла */
-   max-height: calc(100vh - 30px); /* Максимальная высота, равная высоте главного окна с учетом отступа сверху */
+   overflow-y: auto; 
+   max-height: calc(100vh - 30px);
 }
 
 .first_section_friend {
@@ -29,8 +29,8 @@ button {
 
 .secnod_section_friend {
    margin-top: 20px;
-   overflow-y: auto; /* Добавлено для вертикального скролла */
-   max-height: calc(100vh - 30px); /* Максимальная высота, равная высоте главного окна с учетом отступа сверху */
+   overflow-y: auto;
+   max-height: calc(100vh - 30px); 
 }
 
 /* --------------INVITE-------------- */

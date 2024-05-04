@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-
-
 .intro_header {
   border-bottom: 1px solid rgba(21, 21, 21, 0.5);;
 }
@@ -27,7 +25,7 @@
 .earn__container {
   text-align: left;
   color: #fff;
-  margin: 15px 10px 0 15px;
+  margin: 5px 15px 0 15px;
   letter-spacing: 1px;
 }
 
@@ -38,17 +36,34 @@
 /* -------------DailyEarn------------ */
 
 .daily_earn {
-  margin: 10px 0 10px;
+  margin: 5px 0 10px;
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
   border-radius: 20px;
   background: rgba(56, 29, 161, 0.44);
+  
+}
+
+.task_list {
+  margin: 5px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: rgba(56, 29, 161, 0.44);
+  
 }
 
 .calendar_img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px; 
+}
+
+.task_img {
   width: 48px;
-  height: 41px;
+  height: 48px;
   margin-top: 8px; 
 }
 
@@ -72,4 +87,18 @@
 
 .arrow_to_right {
   margin-top: 10px; 
+}
+
+.daily, .task1,
+.task2, .task3, .task4 {
+  overflow-y: auto;
+  max-height: calc(100vh - 30px); 
+}
+
+.earn__container {
+  margin-top: 20px;
+}
+
+.task4 {
+  margin-bottom: 80px;
 }
