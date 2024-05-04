@@ -6,7 +6,7 @@ import MineItem from './mine_components/Item.js';
 
 const Mine = () => {
   return (
-    <div>
+    <div className='Mine'>
 
       <div className='mine_header'>
         <div className='mine_header_element'>
@@ -39,9 +39,16 @@ const Mine = () => {
         <MineItem />
       </div>
 
-      <div className='power_section'>
+      <div className='power_section last_power_section'>
         <h3 className='mine_section_name'>Mining</h3>
 
+        <MineItem />
+        <MineItem />
+        <MineItem />
+        <MineItem />
+        <MineItem />
+        <MineItem />
+        <MineItem />
         <MineItem />
         <MineItem />
         <MineItem />
