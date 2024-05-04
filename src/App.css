@@ -178,10 +178,9 @@ body {
 }
 
 .Strange_line_container {
-  /* margin-bottom: 20px; */
   text-align: left;
   color: #fff;
-  margin-top: 30%;
+  margin-top: 25vh;
   font-size: 12px;
   display:block;
 }
