@@ -49,11 +49,13 @@ const Mine = () => {
             <MineItem />
             <MineItem />
             <MineItem />
-            <MineItem />
+
+
+
+            <MineItem className="mb" />
           </div>
 
       </div>
-      <p className='mb'></p>
     </div>
   );
 }
