@@ -180,7 +180,7 @@ body {
 .Strange_line_container {
   text-align: left;
   color: #fff;
-  margin-top: 25vh;
+  margin-top: 30px;
   font-size: 12px;
   display:block;
 }
@@ -208,5 +208,13 @@ body {
   .user-info_container {
     margin-top: 0;
     text-align: left;
+  }
+
+  .Strange_line_container {
+    text-align: left;
+    color: #fff;
+    margin-top: 60px;
+    font-size: 12px;
+    display:block;
   }
 }
