@@ -7,6 +7,11 @@
   border-bottom: 1px solid rgba(21, 21, 21, 0.5);;
 }
 
+.tasks_link {
+  color: #fff;
+  text-decoration: none;
+}
+
 .intro_icon {
   width: 150px;
   height: 150px;

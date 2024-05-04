@@ -20,7 +20,7 @@ const Earn = () => {
       <div className='earn__container'>
         <h3>Daily tasks</h3>
 
-        <h className='daily_earn'>
+        <a className='daily_earn tasks_link' href='#.'>
           <img src={Calendar} alt='Calendar' className='calendar_img' />
           <div className='task_text'>
             <p className='task_name'>Daily reward</p>
@@ -30,13 +30,13 @@ const Earn = () => {
             </p>
           </div>
           <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
-        </h>
+        </a>
       </div>
       
       <div className='earn__container'>
         <h3>Tasks list</h3>
 
-        <div className='task1'>
+        <a className='task1 tasks_link' href='https://t.me/oakcrypton'>
           <h className='task_list'>
             <img src={Telegram} alt='Calendar' className='task_img' />
               <div className='task_text'>
@@ -48,9 +48,9 @@ const Earn = () => {
               </div>
                 <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
                 </h>
-          </div>
+          </a>
 
-        <div className='task2'>
+        <a className='task2 tasks_link' href='https://t.me/oakcrypton_chat'>
           <h className='task_list'>
             <img src={Telegram} alt='Calendar' className='task_img' />
               <div className='task_text'>
@@ -60,11 +60,11 @@ const Earn = () => {
                 <p>+5 450 000</p>
                 </p>
               </div>
-                <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
-                </h>
-          </div>
+              <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
+          </h>
+        </a>
           
-          <div className='task3'>
+          <a className='task3 tasks_link' href='#.'>
           <h className='task_list'>
             <img src={Twitter} alt='Calendar' className='task_img' />
               <div className='task_text'>
@@ -76,9 +76,9 @@ const Earn = () => {
               </div>
                 <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
                 </h>
-          </div>
+          </a>
           
-          <div className='task4'>
+          <a className='task4 tasks_link' href='#.'>
           <h className='task_list'>
             <img src={VK} alt='Calendar' className='task_img' />
               <div className='task_text'>
@@ -90,7 +90,7 @@ const Earn = () => {
               </div>
                 <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
                 </h>
-          </div>
+          </a>
           
       </div>
       
