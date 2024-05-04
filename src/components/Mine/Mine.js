@@ -43,15 +43,7 @@ const Mine = () => {
         <h3 className='mine_section_name'>Mining</h3>
 
         <MineItem />
-        <MineItem />
-        <MineItem />
-        <MineItem />
-        <MineItem />
-        <MineItem />
-        <MineItem />
-        <MineItem />
-        <MineItem />
-        <MineItem />
+        
       </div>
 
     </div>
