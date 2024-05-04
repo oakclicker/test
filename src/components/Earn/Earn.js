@@ -1,15 +1,20 @@
 import React from 'react';
+import { useState } from 'react';
 import './Earn.css';
-import IntroIcon from './earn_icons/Earn_main_icon.png';
-import Calendar from './earn_icons/calendar.png';
-import SmallCoin from './earn_icons/small_coin.png';
-import ArrowRight from './earn_icons/arrow_to_right.svg';
-import Telegram from './earn_icons/tgico.png';
-import Twitter from './earn_icons/xcom.png';
-import VK from './earn_icons/vk.png';
+import IntroIcon from './earn_components/earn_icons/Earn_main_icon.png';
+import Calendar from './earn_components/earn_icons/calendar.png';
+import SmallCoin from './earn_components/earn_icons/small_coin.png';
+import ArrowRight from './earn_components/earn_icons/arrow_to_right.svg';
+import Telegram from './earn_components/earn_icons/tgico.png';
+import Twitter from './earn_components/earn_icons/xcom.png';
+import VK from './earn_components/earn_icons/vk.png';
+import EarnModal from './earn_components/EarnModal';
 
 
 const Earn = () => {
+
+  const [modalActive, setModalActive] = useState(false)
+
   return (
     <div className='daily'>
       <div className='intro_header'>
@@ -20,7 +25,7 @@ const Earn = () => {
       <div className='earn__container'>
         <h3>Daily tasks</h3>
 
-        <a className='daily_earn tasks_link' href='#.'>
+        <a className='daily_earn tasks_link' href='#.' onClick={() => setModalActive(true)}>
           <img src={Calendar} alt='Calendar' className='calendar_img' />
           <div className='task_text'>
             <p className='task_name'>Daily reward</p>
@@ -88,12 +93,14 @@ const Earn = () => {
                 <p>+5 450 000</p>
                 </p>
               </div>
-                <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
+                <p><h><img src={ArrowRight} className='arrow_to_right last_element' alt="Arrow To Right" /></h></p>
                 </h>
           </a>
           
       </div>
-      
+
+      <EarnModal active={modalActive} setActive={setModalActive} />
+
     </div>
   );
 }

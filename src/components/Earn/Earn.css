@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .intro_header {
   border-bottom: 1px solid rgba(21, 21, 21, 0.5);;
 }
@@ -106,4 +110,121 @@
 
 .task4 {
   margin-bottom: 80px;
+}
+
+/* --------------------------- */
+
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s, visibility .4s;
+}
+
+.modal_box {
+  color: #fff;
+  padding: 25px 35px;
+  margin: 30px 5px;
+  width: 350px;
+  height: 600px;
+  z-index: 1;
+  background-color: #381DA1;
+  border-radius: 30px;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal_header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal_header {
+  margin-bottom: 10px;
+}
+
+.close_modal_button {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 10px 7px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close_modal_image {
+  width: 24px;
+  height: 24px;
+}
+
+.modal_calendar {
+  width: 80px;
+  height: 80px;
+}
+
+.grey_text {
+  color: rgb(192, 188, 188);
+  margin-top: 5px;
+}
+
+/* ----- */
+
+.daily_rewards_section {
+  margin-top: 20px;
+}
+
+.daily_rewards_list {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.rewards_list_item {
+  background: linear-gradient(to top, #170F36, #381DA1);
+  width: 80px;
+  height: 80px;
+  padding: 2px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.cliam_button {
+  font-family: "Aldrich", sans-serif;
+  margin: 20px 0;
+  color: #fff;
+  background-color: #1048DB;
+  font-size: 24px;
+  padding: 15px 90px;
+  border-radius: 15px;
+  cursor: pointer;
+  /* border: 1px solid rgba(225, 225, 225, 0.4); */
+}
+
+
+
+.reward_got {
+  background: linear-gradient(to top, #016105, #1FC005);
+}
+
+.reward_can_get {
+  border: 2px solid #42FF00;
+}
+
+.button_done {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  opacity: 0.6;
 }
