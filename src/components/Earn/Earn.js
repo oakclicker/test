@@ -17,7 +17,8 @@ const Earn = () => {
       <div className='earn__container'>
         <h3>Daily tasks</h3>
 
-        <a className='daily_earn' >
+        {/* Исправлено: добавлен атрибут href */}
+        <a href='#' className='daily_earn'>
           <img src={Calendar} alt='Calendar' className='calendar_img' />
           <div className='task_text'>
             <p className='task_name'>Daily reward</p>
@@ -26,12 +27,9 @@ const Earn = () => {
               <p>+5 450 000</p>
             </p>
           </div>
-          <p></p>
-          <a>
-              <img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" />
-          </a> 
+          {/* Исправлено: добавлен закрывающий тег */}
+          <p><a href='#'><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></a></p>
         </a>
-
       </div>
       
       <div className='earn__container'>
