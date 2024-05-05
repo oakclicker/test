@@ -135,8 +135,8 @@ ul {
 
 .modal_box {
   color: #fff;
-  padding: 25px 20px;
-  margin: 30px 5px;
+  padding: 25px 15px;
+  /* margin: 30px 5px; */
   width: 350px;
   height: 600px;
   z-index: 1;
@@ -144,6 +144,12 @@ ul {
   border-radius: 30px;
   overflow: hidden;
 }
+
+/* @media (max-width: 768px) {
+  .modal_box {
+    width: 90%; height: 90%;
+  }
+} */
 
 .modal.active {
   visibility: visible;
@@ -189,7 +195,7 @@ ul {
 
 .daily_rewards_list {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   gap: 5px;
 }
 
@@ -204,7 +210,7 @@ ul {
 
 .cliam_button {
   font-family: "Aldrich", sans-serif;
-  margin: 20px 0;
+  margin: 5px 0;
   color: #fff;
   background-color: #1048DB;
   font-size: 24px;
