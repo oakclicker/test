@@ -50,7 +50,12 @@ ul {
   justify-content: space-between;
   padding: 10px 15px;
   border-radius: 20px;
-  background: rgba(56, 29, 161, 0.44);
+  background: rgba(163, 71, 227, 0.72);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(163, 71, 227, 1);
   
 }
 
@@ -60,7 +65,13 @@ ul {
   justify-content: space-between;
   padding: 10px 15px;
   border-radius: 20px;
-  background: rgba(56, 29, 161, 0.44);
+  
+  background: rgba(163, 71, 227, 0.72);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(163, 71, 227, 1);
   
 }
 
@@ -139,9 +150,16 @@ ul {
   width: 350px;
   height: 550px;
   z-index: 1;
-  background-color: #381DA1;
+  
   border-radius: 30px;
   overflow: hidden;
+
+  background: rgba(103, 53, 138, 0.7);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border: 1px solid rgba(103, 53, 138, 1);
 }
 
 /* @media (max-width: 768px) {
@@ -199,19 +217,29 @@ ul {
 }
 
 .rewards_list_item {
-  background: linear-gradient(to top, #170F36, #381DA1);
+background: rgba(70, 35, 95, 0.81);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15.6px);
+-webkit-backdrop-filter: blur(15.6px);
+border: 1px solid rgba(70, 35, 95, 1);
   width: 80px;
   height: 80px;
   padding: 2px;
   border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
 }
 
 .cliam_button {
   font-family: "Aldrich", sans-serif;
   margin: 10px 0 0 0;
   color: #fff;
-  background-color: #1048DB;
+  background: rgba(13, 140, 200, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.1px);
+  -webkit-backdrop-filter: blur(10.1px);
+  border: 1px solid rgba(13, 140, 200, 1);
   font-size: 24px;
   padding: 15px 90px;
   border-radius: 15px;
@@ -222,7 +250,13 @@ ul {
 
 
 .reward_got {
-  background: linear-gradient(to top, #016105, #1FC005);
+  /* From https://css.glass */
+background: rgba(23, 157, 24, 0.75);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.6px);
+-webkit-backdrop-filter: blur(13.6px);
+border: 1px solid rgba(23, 157, 24, 1);
 }
 
 .reward_can_get {

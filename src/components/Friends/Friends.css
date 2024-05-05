@@ -42,10 +42,15 @@ button {
    width: 280px;
    height: 70px;
    margin: 25px auto 0px auto;
-   border: 1px solid transparent;
    border-radius: 15px;
-   background: rgb(56, 29, 161);
    cursor: pointer;
+
+   background: rgba(163, 71, 227, 0.72);
+   /* border-radius: 16px; */
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(8.3px);
+   -webkit-backdrop-filter: blur(8.3px);
+   border: 1px solid rgba(163, 71, 227, 1);
 }
 
 .present_icon {
@@ -83,12 +88,16 @@ button {
 .friend_card {
    border: 1px solid transparent;
    border-radius: 15px;
-   background: rgb(56, 29, 161);
    width: 340px;
    height: 70px;
    margin: 20px auto;
    display: flex;
    justify-content: space-between;
+
+   background: rgba(163, 71, 227, 0.72);
+   /* border-radius: 16px; */
+   backdrop-filter: blur(8.3px);
+   -webkit-backdrop-filter: blur(8.3px);
 }
 
 .user_icon {
@@ -96,7 +105,8 @@ button {
    height: 40px;
    margin-left: 15px;
    margin-top: 15px;
-   border: 1px solid rgba(56, 29, 161, 0.55);
+   border: 1px solid rgba(208, 52, 255, 0.55);
+   background-color: rgba(208, 52, 255, 0.55);
    border-radius: 50%;
 }
 

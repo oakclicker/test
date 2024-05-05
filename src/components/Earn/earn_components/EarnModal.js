@@ -98,7 +98,7 @@ const EarnModal = ({ active, setActive, children }) => {
                </ul>
             </div>
 
-            <button className='cliam_button button_done'>Cliam</button>
+            <button className='cliam_button button_done'>Claim</button>
 
          </div>
       </div>
