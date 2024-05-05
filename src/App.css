@@ -154,7 +154,7 @@ body {
 
 
 .nav-button {
-  padding: 6px;
+  padding: 8px;
   min-width: 60px;
   font-size: 18px;
   border: none;
@@ -169,7 +169,6 @@ body {
   overflow: hidden;
   color: #8A8A8A;
   position: relative; /* Добавляем позиционирование, чтобы псевдоэлемент мог быть корректно расположен */
-  margin-bottom: 9px;
 }
 
 .nav-button.active {
@@ -178,7 +177,6 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.9px);
   -webkit-backdrop-filter: blur(6.9px);
-  
 }
 
 .nav-button.active::after {
@@ -193,7 +191,7 @@ body {
 
 .nav-button img {
   max-width: 80%;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .Strange_line_container {
