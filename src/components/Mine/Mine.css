@@ -89,3 +89,98 @@
    margin-top: 12px;
    margin-left: 10px;
 }
+
+
+/* --------------------- */
+
+.modal {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 9998;
+   background-color: rgba(0, 0, 0, 0.3);
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   overflow-y: hidden;
+ 
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity .4s, visibility .4s;
+ }
+ 
+.modal_box {
+   color: #fff;
+   width: 100vh;
+   height: 100vh;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.modal.active {
+   visibility: visible;
+   opacity: 1;
+}
+
+
+.PixarPrew {
+   width: 100px;
+   height: 100px;
+   margin: 10px 0;
+}
+
+.info_container p {
+   margin-top: 30px;
+}
+
+.info_container div {
+   display: flex;
+   justify-content: center;
+}
+
+.update_price {
+   margin-top: 5px;
+   margin-left: 3px;
+}
+
+.price_and_lvl {
+   margin-top: 10px;
+}
+
+.info_lvl {
+   color: rgb(192, 188, 188);
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 13px;
+   margin-top: 9px;
+   margin-left: 10px;
+}
+
+.your_balance {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+}
+
+.your_balance p {
+   margin-top: 5px;
+   margin-right: 15px;
+}
+
+.your_balance div {
+   display: flex;
+   justify-content: space-between;
+}
+
+.upgrate_button {
+   color: #fff;
+   font-family: "Aldrich", sans-serif;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   border-radius: 20px;
+   width: 150px;
+   margin: 35px auto;
+   background: linear-gradient(0.00deg, rgba(23, 15, 54, 0.4) -2.778%,rgba(56, 29, 161, 0.4) 97.222%);
+}
