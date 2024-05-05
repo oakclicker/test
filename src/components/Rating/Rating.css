@@ -1,0 +1,135 @@
+.rating_title {
+   color: #fff;
+   margin: 40px 0;
+}
+
+.rating_header {
+   border-bottom: 1px solid #736E6E;
+   padding-bottom: 10px;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+}
+
+.rating_header h2 {
+   margin-bottom: 35px;
+}
+
+.not_first_place {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 30px;
+}
+
+.second {
+   margin-left: 20px;
+}
+
+.third {
+   margin-right: 20px;
+}
+
+.first_place {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.middle_user_icon {
+   /* margin-bottom: -10px; */
+   width: 50px;
+   height: 50px;
+   background-color: #381DA1;
+   border-radius: 50%;
+   padding: 15px;
+}
+
+.large_user_icon {
+   width: 60px;
+   height:60px;
+   background-color: #381DA1;
+   border-radius: 50%;
+   padding: 15px;
+}
+
+.user_place {
+   margin-top: -25px;
+   width: 40px;
+   height: 40px;
+}
+
+.user_name {
+   margin-top: 5px;
+}
+
+.user_money_container {
+   display: flex;
+   align-items: center;
+   margin-top: 5px;
+}
+
+.user_money {
+   margin-right: 5px;
+}
+
+.user_money_1st {
+   color: rgb(230, 174, 32);
+}
+
+.user_money_2nd {
+   color: rgb(167, 167, 167);
+}
+
+.user_money_3rd {
+   color: rgb(236, 144, 6);
+}
+
+.raiting_section {
+   overflow-y: auto;
+   max-height: calc(70vh - 30px);
+   margin-bottom: 80px;
+   
+}
+
+
+
+/* ---------------------------------- */
+
+
+.rating_places {
+   display: flex;
+   justify-content: space-between;
+   padding: 15px 30px;
+   color: #fff;
+   border-radius: 20px;
+   background: rgba(56, 29, 161, 0.44);
+   margin: 10px;
+}
+
+.player_place {
+   font-size: 22px;
+   margin: auto 0;
+}
+
+.player_avatar {
+   width: 40px;
+   height: 40px;
+   margin: auto 10px auto 0;
+   background-color: rgba(56, 29, 161, 0.55);
+   padding: 15px;
+   border-radius: 50%;
+}
+
+.player_place_info {
+   margin: auto 70px auto 0;
+   text-align: left;
+}
+
+.player_cash {
+   display: flex;
+}
+
+.player_cash p {
+   margin-right: 2px;
+}
