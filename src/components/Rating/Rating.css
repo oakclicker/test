@@ -23,11 +23,11 @@
 }
 
 .second {
-   margin-left: 20px;
+   margin-left: 30px;
 }
 
 .third {
-   margin-right: 20px;
+   margin-right: 30px;
 }
 
 .first_place {
@@ -135,5 +135,5 @@
 }
 
 .last_rating {
-   margin-bottom: 160px;
+   margin-bottom: 80px;
 }

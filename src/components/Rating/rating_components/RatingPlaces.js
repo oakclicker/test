@@ -4,15 +4,15 @@ import User from './rating_icons/user.svg';
 import MiddleCoin from './rating_icons/middle_coin.png';
 
 
-const RatingPlaces = () => {
+const RatingPlaces = ({ place, userName, userMoney }) => {
    return (
       <div className='rating_places'>
-         <p className='player_place'>4</p>
+         <p className='player_place'>{place}</p>
          <img src={User} alt='user' className='player_avatar' />
          <div className='player_place_info'>
-            <p className='player_name'>User</p>
+            <p className='player_name'>{userName}</p>
             <div className='player_cash'>
-               <p>8,500,00</p>
+               <p>{userMoney}</p>
                <img src={MiddleCoin} alt='coin' />
             </div>
          </div>

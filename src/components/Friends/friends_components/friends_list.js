@@ -1,23 +1,24 @@
 import React from 'react';
 import '../Friends.css';
-import user from './friends_icons/User_icon.svg';
 import coin_icon from '../friends_components/friends_icons/coin.png';
 
-const FriendsList = () => {
+const FriendsList = ({ friend_name, friend_image, friend_money }) => {
   return (
     <div className='friend_card'>
-        <img src={user} className='user_icon' alt='User' />
+
+        <img src={friend_image} className='user_icon' alt='User' />
         <div className='friend_text transparent'>
-          <p className='friend_name transparent'>Friend Name</p>
+          <p className='friend_name transparent'>{friend_name}</p>
           <div className='friend_info transparent'>
-            <span className='check transparent'>8600</span>
-            <img className='coin transparent' src={coin_icon} alt="Coin icon" />
+            <span className='check transparent'>{friend_money}</span>
+            <img className='coin transparent' src={coin_icon} alt="Coin" />
           </div>
         </div>
         <div className='bonus_display transparent'>
           <span className='friend_bonus transparent'>+2k</span>
-          <img className='coin transparent transparent' src={coin_icon} alt="Coin icon" />
+          <img className='coin transparent' src={coin_icon} alt="Coin" />
         </div>
+
     </div>
   );
 }
