@@ -74,8 +74,18 @@ const Rating = () => {
         <RatingPlaces />
         <RatingPlaces />
         <RatingPlaces />
-        <RatingPlaces />
-
+      <div className='rating_places last_place'>
+         <p className='player_place'>4</p>
+         <img src={User} alt='user' className='player_avatar' />
+         <div className='player_place_info'>
+            <p className='player_name'>User</p>
+            <div className='player_cash'>
+               <p>8,500,00</p>
+               <img src={MiddleCoin} alt='coin' />
+            </div>
+         </div>
+         <p></p>
+      </div>
       </div>
 
     </div>
