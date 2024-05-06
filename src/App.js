@@ -85,15 +85,25 @@ function App() {
         <div className="app-window">
           {userData && (
                         <div id="usercard" className="user-card">
-                        <div className="user-panel">
+                        {/* <div className="user-panel">
                           <img src={`https://t.me/i/userpic/320/${userData.username}.jpg`} alt="Avatar" className="avatar transparent" />
                           <div className='userInfo_container transparent'>
                             <p className='transparent user_name'>{userData.first_name} {userData.last_name}</p>
                             <p className='transparent user_id'>ID: {userData.id}</p>
                           </div>
-                        </div> 
+                        </div>  */}
                       </div>
           )}
+
+<div id="usercard" className="user-card">
+                        <div className="user-panel">
+                          <img src={MainButton} alt="Avatar" className="avatar transparent" />
+                          <div className='userInfo_container transparent'>
+                            <p className='transparent user_name'>NEKRUZ Check bio WTF</p>
+                            <p className='transparent user_id'>ID: 5812472412</p>
+                          </div>
+                        </div> 
+                      </div>
 
               <div className='balance-container'>
                 <div className='user_balance_container'>
