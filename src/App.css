@@ -33,13 +33,13 @@ body {
   align-items: left;
   text-align: left;
 
-  background: rgba(99, 39, 141, 0.72);
+  background: rgba(40, 31, 122, 0.52);
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.3px);
-  -webkit-backdrop-filter: blur(8.3px);
-  border: 1px solid rgba(163, 71, 227, 1);
-}
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
+  border: 1px solid rgb(86, 74, 190);
+  }
 
 .user_info_container {
   margin-top: 10px;
@@ -145,12 +145,12 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 
-  background: rgba(79, 2, 134, 0.09);
-  border-radius: 16px;
+  background: rgba(40, 31, 122, 0.52);
+  /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  border: 1px solid rgba(123, 0, 208, 0.18);
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
+  /* border: 1px solid rgb(86, 74, 190); */
   z-index: 999;
 }
 
@@ -175,7 +175,7 @@ body {
 
 .nav-button.active {
   color: #FFFFFF;
-  background: rgba(74, 24, 109, 0.77);
+  background: rgba(5, 19, 99, 0.77);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.9px);
   -webkit-backdrop-filter: blur(6.9px);

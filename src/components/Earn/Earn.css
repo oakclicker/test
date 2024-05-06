@@ -50,12 +50,12 @@ ul {
   justify-content: space-between;
   padding: 10px 15px;
   border-radius: 20px;
-  background: rgba(99, 39, 141, 0.72);
+  background: rgba(40, 31, 122, 0.52);
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.3px);
-  -webkit-backdrop-filter: blur(8.3px);
-  border: 1px solid rgba(163, 71, 227, 1);
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
+  border: 1px solid rgb(86, 74, 190);
   
 }
 
@@ -66,12 +66,12 @@ ul {
   padding: 10px 15px;
   border-radius: 20px;
   
-  background: rgba(99, 39, 141, 0.72);
+  background: rgba(40, 31, 122, 0.52);
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.3px);
-  -webkit-backdrop-filter: blur(8.3px);
-  border: 1px solid rgba(163, 71, 227, 1);
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
+  border: 1px solid rgb(86, 74, 190);
   
 }
 
@@ -154,12 +154,12 @@ ul {
   border-radius: 30px;
   overflow: hidden;
 
-  background: rgba(103, 53, 138, 0.7);
+  background: rgba(40, 31, 122, 0.52);
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(14.5px);
-  -webkit-backdrop-filter: blur(14.5px);
-  border: 1px solid rgba(103, 53, 138, 1);
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
+  border: 1px solid rgb(86, 74, 190);
 }
 
 /* @media (max-width: 768px) {
@@ -217,12 +217,12 @@ ul {
 }
 
 .rewards_list_item {
-background: rgba(70, 35, 95, 0.81);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(15.6px);
--webkit-backdrop-filter: blur(15.6px);
-border: 1px solid rgba(70, 35, 95, 1);
+  background: rgba(62, 48, 180, 0.52);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
+  border: 1px solid rgb(86, 74, 190);
   width: 80px;
   height: 80px;
   padding: 2px;
@@ -234,7 +234,7 @@ border: 1px solid rgba(70, 35, 95, 1);
   font-family: "Aldrich", sans-serif;
   margin: 10px 0 0 0;
   color: #fff;
-  background: rgba(13, 140, 200, 0.75);
+  background: rgba(24, 167, 233, 0.75);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.1px);
@@ -251,7 +251,7 @@ border: 1px solid rgba(70, 35, 95, 1);
 
 .reward_got {
   /* From https://css.glass */
-background: rgba(23, 157, 24, 0.75);
+background: rgba(25, 167, 25, 0.75);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(13.6px);

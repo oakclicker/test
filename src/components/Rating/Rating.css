@@ -1,11 +1,12 @@
 .rating_title {
    color: #fff;
-   margin: 40px 0;
+   padding-top: 20px;
 }
 
 .rating_header {
    border-bottom: 1px solid #736E6E;
    padding-bottom: 10px;
+   padding-top: 20px;
    color: #fff;
    display: flex;
    justify-content: space-between;
@@ -100,10 +101,15 @@
 .rating_places {
    display: flex;
    justify-content: space-between;
-   padding: 15px 30px;
+   padding: 10px 20px;
    color: #fff;
    border-radius: 20px;
-   background: rgba(56, 29, 161, 0.44);
+   background: rgba(40, 31, 122, 0.52);
+   /* border-radius: 16px; */
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(12.4px);
+   -webkit-backdrop-filter: blur(12.4px);
+   border: 1px solid rgb(86, 74, 190);
    margin: 10px;
 }
 
