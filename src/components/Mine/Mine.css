@@ -29,6 +29,11 @@
    margin-top: 3px;
 }
 
+.mine_header_text img {
+   margin-top: -1px;
+   margin-right: 2px;
+}
+
 .scroll {
    overflow-y: auto;
    max-height: calc(100vh - 30px);
@@ -89,6 +94,11 @@
 .item_price div  {
    display: flex;
    margin-top: 8px;
+}
+
+.item_price div img {
+   margin: -1px;
+   margin-left: 2px;
 }
 
 .item_lvl {

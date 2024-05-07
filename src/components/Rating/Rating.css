@@ -60,6 +60,16 @@
    height: 40px;
 }
 
+.second_place_icon {
+   margin-right: 2px;
+}
+
+.first_place_icon {
+   margin-right: 1px;
+   width: 41px;
+   height: 41px;
+}
+
 .user_name {
    margin-top: 5px;
 }

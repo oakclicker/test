@@ -11,7 +11,7 @@ const Rating = () => {
   return (
     <div className='Rating'>
 
-      <h2 className='rating_title'>Player Ratings</h2>
+      <h2 className='rating_title'>Players Ratings</h2>
 
       <div className='rating_header'>
         

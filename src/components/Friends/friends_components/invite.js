@@ -10,8 +10,10 @@ const Invite = () => {
       <div className='invite_text transparent'>
          <p className='invite_title transparent'>Invite a friend</p>
          <div className='cash transparent'>
-            <span className='check transparent'>8600</span>
-            <img className='coin transparent' src={coin_icon} alt='coin' />
+            <span className='check transparent'>8 600, 00</span>
+            <div className='coin_container'>
+               <img className='coin transparent' src={coin_icon} alt='coin' />
+            </div>
          </div>
       </div>
       <p></p>

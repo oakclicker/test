@@ -11,7 +11,7 @@ const SecondPlace = ({user_name, user_money, user_image}) => {
       <div className='not_first_place second'>
 
          <img src={user_image} alt='user icon' className='middle_user_icon' />
-         <img src={SecondPlaceIcon} alt='2nd place' className='user_place' />
+         <img src={SecondPlaceIcon} alt='2nd place' className='user_place second_place_icon' />
          <p className='user_name'>{user_name}</p>
          <div className='user_money_container'>
            <p className='user_money user_money_2nd'>{user_money}</p>

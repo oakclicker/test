@@ -25,6 +25,7 @@ function App() {
   const [energy, setEnergy] = useState(1000);
   const [activeWindow, setActiveWindow] = useState('App');
   const [buttonPressed, setButtonPressed] = useState(false);
+  
 
   useEffect(() => {
     const telegramApp = window.Telegram.WebApp;
@@ -103,6 +104,7 @@ function App() {
                   </p>
                   <button className={`add-balance-button ${buttonPressed && 'pressed'}`} onClick={handleAddBalance}>
                     <img src={MainButton} alt='Main Button' className='transparent' />
+                      
                   </button>
                 </div>
               </div>

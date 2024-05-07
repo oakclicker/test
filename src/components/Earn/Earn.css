@@ -65,14 +65,11 @@ ul {
   justify-content: space-between;
   padding: 10px 15px;
   border-radius: 20px;
-  
   background: rgba(40, 31, 122, 0.52);
-  /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.4px);
   -webkit-backdrop-filter: blur(12.4px);
   border: 1px solid rgb(86, 74, 190);
-  
 }
 
 .calendar_img {
@@ -89,7 +86,7 @@ ul {
 
 .task_text {
   margin-top: 10px;
-  margin-right: 60px;
+  /* margin-right: 60px; */
 }
 
 .task_name {
@@ -99,6 +96,10 @@ ul {
 
 .task_price {
   display: flex;
+}
+
+.task_price p {
+  margin-top: 1px;
 }
 
 .small_coin {

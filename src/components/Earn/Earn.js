@@ -45,10 +45,10 @@ const Earn = () => {
           <h className='task_list'>
             <img src={Telegram} alt='Calendar' className='task_img' />
               <div className='task_text'>
-                <p className='task_name'>Subscribe Channel</p>
+                <p className='task_name'>Subscribe</p>
                 <p className='task_price'>
-                <img src={SmallCoin} alt='small coin' className='small_coin' />
-                <p>+5 450 000</p>
+                  <img src={SmallCoin} alt='small coin' className='small_coin' />
+                  <p>+5 450 000</p>
                 </p>
               </div>
                 <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
@@ -59,10 +59,10 @@ const Earn = () => {
           <h className='task_list'>
             <img src={Telegram} alt='Calendar' className='task_img' />
               <div className='task_text'>
-                <p className='task_name'>Subscribe Group</p>
+                <p className='task_name'>Subscribe</p>
                 <p className='task_price'>
-                <img src={SmallCoin} alt='small coin' className='small_coin' />
-                <p>+5 450 000</p>
+                  <img src={SmallCoin} alt='small coin' className='small_coin' />
+                  <p>+5 450 000</p>
                 </p>
               </div>
               <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
@@ -73,10 +73,10 @@ const Earn = () => {
           <h className='task_list'>
             <img src={Twitter} alt='Calendar' className='task_img' />
               <div className='task_text'>
-                <p className='task_name'>Subscribe Twitter</p>
+                <p className='task_name'>Subscribe</p>
                 <p className='task_price'>
-                <img src={SmallCoin} alt='small coin' className='small_coin' />
-                <p>+5 450 000</p>
+                  <img src={SmallCoin} alt='small coin' className='small_coin' />
+                  <p>+5 450 000</p>
                 </p>
               </div>
                 <p><h><img src={ArrowRight} className='arrow_to_right' alt="Arrow To Right" /></h></p>
@@ -87,10 +87,10 @@ const Earn = () => {
           <h className='task_list'>
             <img src={VK} alt='Calendar' className='task_img' />
               <div className='task_text'>
-                <p className='task_name'>Subscribe Vk</p>
+                <p className='task_name'>Subscribe</p>
                 <p className='task_price'>
-                <img src={SmallCoin} alt='small coin' className='small_coin' />
-                <p>+5 450 000</p>
+                  <img src={SmallCoin} alt='small coin' className='small_coin' />
+                  <p>+5 450 000</p>
                 </p>
               </div>
                 <p><h><img src={ArrowRight} className='arrow_to_right last_element' alt="Arrow To Right" /></h></p>
