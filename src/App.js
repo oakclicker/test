@@ -21,6 +21,7 @@ import ProgressBar from './components/ProgressBar/ProgressBar'; // Импорт 
 import GamesMenu from './games/GamesMenu.js';
 
 function App() {
+  
   const [userData, setUserData] = useState(null);
   const [balance, setBalance] = useState(10000000);
   const [energy, setEnergy] = useState(1000);
