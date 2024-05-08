@@ -7,12 +7,28 @@ body {
   overflow: hidden;
 }
 
+/* -------------------------------------- */
+
 .App {
   text-align: center;
   background: rgb(39,30,117);
   background: linear-gradient(0deg, rgba(39,30,117,1) 0%, rgba(22,7,60,1) 93%);
   position: relative;
 }
+
+.to_games_button {
+  font-family: "Aldrich", sans-serif;
+  color: #fff;
+  background-color: #381DA1;
+  border-radius: 20px;
+  padding: 15px 35px;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+
+
+/* ----------------------------------------- */
 
 .app-window {
   overflow: hidden;
@@ -261,3 +277,4 @@ body {
   border: 1px solid black;
   margin: 50px auto;
 }
+

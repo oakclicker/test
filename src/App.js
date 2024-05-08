@@ -18,6 +18,7 @@ import MainButton from './icons/main_button.png';
 import MainCoin from './icons/main_coin.png';
 import Light from './icons/light.svg';
 import ProgressBar from './components/ProgressBar/ProgressBar'; // Импорт ProgressBar
+import GamesMenu from './games/GamesMenu.js';
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -25,7 +26,7 @@ function App() {
   const [energy, setEnergy] = useState(1000);
   const [activeWindow, setActiveWindow] = useState('App');
   const [buttonPressed, setButtonPressed] = useState(false);
-  
+
 
   useEffect(() => {
     const telegramApp = window.Telegram.WebApp;
@@ -117,10 +118,13 @@ function App() {
 
                   <ProgressBar value={energy} max={1000} />
               </div>
-        </div>
 
-        
+              <button className='to_games_button' onClick={() => handleWindowChange('GamesMenu')}>Games</button>
+        </div>
       )}
+
+      
+
       <div className="navigation">
         <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
           <img src={getIcon('Rating')} alt="Rating Icon" />
@@ -148,6 +152,7 @@ function App() {
       {activeWindow === 'Mine' && <Mine />}
       {activeWindow === 'Earn' && <Earn />}
       {activeWindow === 'Friends' && <Friends />}
+      {activeWindow === 'GamesMenu' && <GamesMenu />}
     </div>
   );
 }
