@@ -30,18 +30,19 @@
    background:rgba(255, 225, 255, 0.1);
    border-radius: 30px;
    margin: 10px 50px;
-   padding: 10px 50px;
+   padding: 15px 50px;
 }
 
 .tower__input__container {
    margin-top: 30px;
 }
 
-.tower_input {
+.Game_input {
    border-radius: 10px;
    background-color:rgba(255, 225, 255, 0.1);
    border: none;
    padding: 15px;
+   color : #fff;
 }
 
 .tower_bet_button {
@@ -49,4 +50,22 @@
    background-color:rgba(255, 225, 255, 0.1);
    padding: 15px;
    margin-left: 10px;
+}
+
+.t_bonuses_list {
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 10px 10px;
+}
+
+.t_b_list_item {
+   border-radius: 15px;
+   border: 1px solid rgba(255, 225, 255, 0.3);
+   width: 65px;
+   padding: 10px 0;
+}
+
+.t_b_l_item_lvl {
+   color: gray;
+   margin-bottom: 4px;
 }

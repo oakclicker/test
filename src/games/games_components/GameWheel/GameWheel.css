@@ -1,15 +1,103 @@
+.wheel__content {
+   margin-top: 10px;
+   overflow-y: auto;
+   max-height: calc(80vh - 30px);
+}
+
 .wheel__gameplay {
    border: 1px solid #fff;
    border-radius: 15px;
-   height: 300px;
+   height: 150px;
    width: 300px;
-   margin: 50px auto 0;
+   margin: 20px auto 0;
 }
 
 .wheel_button {
-   margin-top: 40px;
+   margin-top: 10px;
    background-color: #381DA1;
    border-radius: 20px;
    padding: 10px 40px;
    font-size: 18px;
+}
+
+.wheel_history {
+   text-align: left;
+   margin: 15px 40px 0;
+   background-color: rgba(56, 29, 161, 0.44);
+   border: 1px solid rgba(225, 225, 225, 0.6);
+   border-radius: 15px;
+   padding: 5px 5px 10px; 
+}
+
+.wheel_history p {
+   margin-left: 10px;
+   margin-top: 5px;
+}
+
+.wheel_history_elements {
+   margin-top: 10px;
+   position: relative;
+   overflow: hidden;
+   overflow-x: auto; 
+   white-space: nowrap !important;
+}
+
+.w_history_element {
+   margin-left: 8px;
+   margin-bottom: 10px;
+   width: 40px;
+   border-radius: 10px;
+   text-align: center;
+   padding: 10px 0;
+   display: inline-block;
+}
+
+.red {
+   background-color: red;
+}
+
+.black {
+   background-color: black;
+}
+
+.wheel_bets {
+   margin-top: 15px;
+}
+
+
+
+.wheel_bets_variations {
+   display: flex;
+   justify-content: space-between;
+   margin: 30px 25px;
+}
+
+.w_b_variation {
+   width: 100px;
+   padding: 10px 5px;
+   border-radius: 7px;
+}
+
+.bet_red {
+   background-color: red;
+}
+
+.bet_zero {
+   background-color: #381DA1;
+}
+
+.bet_black {
+   background-color: black;
+}
+
+.bet_green {
+   background-color: rgba(0, 225, 0, 0.8) ;
+}
+
+.bet_purple {
+   background-color: rgba(188, 19, 254, 0.8);
+}
+
+.bet_blue {
+   background-color: rgba(19, 202, 254, 0.5)
 }
