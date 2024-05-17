@@ -120,33 +120,35 @@ function App() {
                   <ProgressBar value={energy} max={1000} />
               </div>
 
-              <button className='to_games_button' onClick={() => handleWindowChange('GamesMenu')}>Games</button>
+              <button button className='to_games_button' onClick={() => handleWindowChange('GamesMenu')}>Games</button>
         </div>
       )}
-
       
-
-      <div className="navigation">
-        <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
-          <img src={getIcon('Rating')} alt="Rating Icon" />
-          <p className='menu__text'>Rating</p>
-        </button>
-        <button className={`nav-button ${activeWindow === 'Mine' && 'active'}`} onClick={() => handleWindowChange('Mine')}>
-          <img src={getIcon('Mine')} alt="Mine Icon" />
-          <p className='menu__text'>Mine</p>
-        </button>
-        <button className={`nav-button ${activeWindow === 'App' && 'active'}`} onClick={() => handleWindowChange('App')}>
-          <img src={getIcon('App')} alt="App Icon" />
-          <p className='menu__text'>App</p>
-        </button>
-        <button className={`nav-button ${activeWindow === 'Earn' && 'active'}`} onClick={() => handleWindowChange('Earn')}>
-          <img src={getIcon('Earn')} alt="Earn Icon" />
-          <p className='menu__text'>Earn</p>
-        </button>
-        <button className={`nav-button ${activeWindow === 'Friends' && 'active'}`} onClick={() => handleWindowChange('Friends')}>
-          <img src={getIcon('Friends')} alt="Friends Icon" />
-          <p className='menu__text'>Friends</p>
-        </button>
+      
+      <div className='navigation_container'>
+        
+        <div className="navigation">
+          <button className={`nav-button ${activeWindow === 'Rating' && 'active'}`} onClick={() => handleWindowChange('Rating')}>
+            <img src={getIcon('Rating')} alt="Rating Icon" />
+            <p className='menu__text'>Rating</p>
+          </button>
+          <button className={`nav-button ${activeWindow === 'Mine' && 'active'}`} onClick={() => handleWindowChange('Mine')}>
+            <img src={getIcon('Mine')} alt="Mine Icon" />
+            <p className='menu__text'>Mine</p>
+          </button>
+          <button className={`nav-button ${activeWindow === 'App' && 'active'}`} onClick={() => handleWindowChange('App')}>
+            <img src={getIcon('App')} alt="App Icon" />
+            <p className='menu__text'>App</p>
+          </button>
+          <button className={`nav-button ${activeWindow === 'Earn' && 'active'}`} onClick={() => handleWindowChange('Earn')}>
+            <img src={getIcon('Earn')} alt="Earn Icon" />
+            <p className='menu__text'>Earn</p>
+          </button>
+          <button className={`nav-button ${activeWindow === 'Friends' && 'active'}`} onClick={() => handleWindowChange('Friends')}>
+            <img src={getIcon('Friends')} alt="Friends Icon" />
+            <p className='menu__text'>Friends</p>
+          </button>
+        </div>
       </div>
 
       {activeWindow === 'Rating' && <Rating />}

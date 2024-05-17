@@ -2,9 +2,13 @@
 
 body {
   background: rgb(39,30,117);
-  /* background: linear-gradient(0deg, rgba(39,30,117,1) 0%, rgba(22,7,60,1) 93%); */
   font-family: "Aldrich", sans-serif;
   overflow: hidden;
+}
+
+button {
+  font-family: "Aldrich", sans-serif;
+  color: #fff;
 }
 
 /* -------------------------------------- */
@@ -22,7 +26,7 @@ body {
   background-color: #381DA1;
   border-radius: 20px;
   padding: 15px 35px;
-  margin-top: 30px;
+  margin-top: 40px;
   cursor: pointer;
 }
 
@@ -32,6 +36,10 @@ body {
 
 .app-window {
   overflow: hidden;
+}
+
+.navigation_container {
+  position: relative;
 }
 
 .navigation {
@@ -104,7 +112,6 @@ body {
   width: 2em;
   height: 2em;
 }
-
 
 .balance-container {
   display: flex;

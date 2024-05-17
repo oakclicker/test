@@ -1,9 +1,6 @@
 .GamesMenu {
    color: #fff;
-   padding-top: 20px;
 }
-
-
 
 ul {
    list-style: none;
@@ -12,6 +9,10 @@ ul {
 .games_container {
    margin: 20px 10px;
    padding: 20px;
+}
+
+.games_menu__title {
+   padding: 40px 0 20px;
 }
 
 .games_row {
@@ -52,3 +53,83 @@ ul {
    margin-bottom: 2px;
 }
 
+.games__link {
+   color: #fff;
+   text-decoration: none;
+}
+
+
+/* --------------------- */
+
+
+.Game {
+   background: linear-gradient(0deg, rgba(39, 30, 117, 1) 0%, rgba(22, 7, 60, 1) 93%);
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   align-items: center;
+   z-index: 998;
+}
+
+.Game-enter {
+   transform: translateY(100%);
+ }
+ 
+ .Game-enter-active {
+   transform: translateY(0);
+   transition: transform 300ms;
+ }
+ 
+ .Game-exit {
+   transform: translateY(0);
+ }
+ 
+ .Game-exit-active {
+   transform: translateY(100%);
+   transition: transform 300ms;
+ }
+
+.game_header {
+   height: 50px;
+   width: 100%;
+   border-bottom: 1px solid #000;
+   -webkit-box-shadow: 1px 4px 6px -1px rgba(76,  102,  238, 0.54);
+   -moz-box-shadow: 1px 4px 6px -1px rgba(76,  102,  238, 0.54);
+   box-shadow: 1px 4px 6px -1px rgba(76,  102,  238, 0.54);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.back_button {
+   width: 30px;
+   height: 30px;
+   flex: 0 0 auto;
+}
+
+.game__title {
+   margin: 0 auto;
+}
+
+@keyframes bounce {
+   0%, 20%, 50% {
+     transform: translateY(0);
+   }
+   20% {
+     transform: translateY(-8px);
+   }
+   40% {
+     transform: translateY(-5px);
+   }
+ }
+ 
+.GameIcon {
+   animation: bounce 1.5s infinite;
+   width: 30px;
+   height: 30px;
+   margin-top: 5px;
+}
+ 
