@@ -127,7 +127,7 @@ const GamesMenu = () => {
           </ul>
         </div>
 
-        <button className='games_back_button' onClick={() => window.location.href = '../App.js'} id='openMenuBtn'>Back</button>
+        <button className='games_back_button' onClick={() => window.location.href = '/'} id='openMenuBtn'>Back</button>
       </div>
 
       <CSSTransition
