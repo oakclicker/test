@@ -1,9 +1,9 @@
 .crash__gameplay {
    border: 1px solid #fff;
    border-radius: 15px;
-   height: 300px;
+   height: 180px;
    width: 300px;
-   margin: 50px auto 0;
+   margin: 20px auto 0;
 }
 
 .crash_button {
@@ -12,4 +12,63 @@
    border-radius: 20px;
    padding: 10px 40px;
    font-size: 18px;
+}
+
+.crash_history {
+   text-align: left;
+   margin: 15px 40px 0;
+   background-color: rgba(56, 29, 161, 0.44);
+   border: 1px solid rgba(225, 225, 225, 0.6);
+   border-radius: 15px;
+   padding: 8px 8px 10px; 
+}
+
+.crash_history_elements {
+   margin-top: 10px;
+   position: relative;
+   overflow: hidden;
+   overflow-x: auto; 
+   white-space: nowrap !important;
+}
+
+.c_history_element {
+   margin-left: 8px;
+   margin-bottom: 10px;
+   width: 55px;
+   border-radius: 10px;
+   text-align: center;
+   padding: 10px 0;
+   display: inline-block;
+}
+
+.green {
+   background-color: green;
+}
+
+.orange {
+   background-color: orange;
+}
+
+.crash_bets {
+   text-align: left;
+   margin: 20px 20px 0;
+}
+
+.crash_bets_container {
+   border: 1px solid rgba(225, 225, 225, 0.6);
+   border-radius: 15px;
+   padding: 10px;
+   display: flex;
+}
+
+.Crash_input {
+   width: 120px !important;
+}
+
+.auto_get_container {
+   margin-left: 10px;
+}
+
+.Crash_input_auto {
+   width: 120px !important;
 }

@@ -18,6 +18,8 @@ button {
   background: rgb(39,30,117);
   background: linear-gradient(0deg, rgba(39,30,117,1) 0%, rgba(22,7,60,1) 93%);
   position: relative;
+  overflow-y: auto;
+  max-height: calc(100vh - 30px);
 }
 
 .to_games_button {
