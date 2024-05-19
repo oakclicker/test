@@ -23,7 +23,7 @@ const GameTower = ({ isOpen, onClose }) => {
                <p className='header_balance_display'>balance: 10000000</p>
             </div>
             
-            <div className='tower__content'>
+            <div className='game__content'>
                <div className='tower__gameplay'>
                   <h2 className='tower__title'>Select difficulty level</h2>
                   <div className='tower__difficult'>

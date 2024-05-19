@@ -1,7 +1,9 @@
+
+
 .double__gameplay {
    border: 1px solid #fff;
    border-radius: 15px;
-   height: 300px;
+   height: 180px;
    width: 300px;
    margin: 50px auto 0;
 }
@@ -12,4 +14,55 @@
    border-radius: 20px;
    padding: 10px 40px;
    font-size: 18px;
+}
+
+.double_history {
+   text-align: left;
+   margin: 15px 40px 0;
+   background-color: rgba(56, 29, 161, 0.44);
+   border: 1px solid rgba(225, 225, 225, 0.6);
+   border-radius: 15px;
+   padding: 5px 5px 10px; 
+}
+
+.double_history p {
+   margin-left: 10px;
+   margin-top: 5px;
+}
+
+.double_history_elements {
+   margin-top: 10px;
+   position: relative;
+   overflow: hidden;
+   overflow-x: auto; 
+   white-space: nowrap !important;
+}
+
+.d_history_element {
+   margin-left: 8px;
+   margin-bottom: 10px;
+   width: 40px;
+   border-radius: 10px;
+   text-align: center;
+   padding: 10px 0;
+   display: inline-block;
+   background-color: rgba(128, 128, 128, 0.6);
+}
+
+.wheel_bet_container {
+   margin-top: 20px;
+}
+
+.double_bet_bonuses {
+   display: flex;
+   margin-top: 30px;
+   text-align: center;
+}
+
+.d_bet_bonus {
+   margin: 0 15px;
+   width: 100px;
+   padding: 15px 0;
+   border-radius: 20px;
+   border: 1px solid rgba(225, 225, 225, 0.6);
 }

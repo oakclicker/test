@@ -24,7 +24,7 @@ const GameWheel = ({ isOpen, onClose }) => {
             </div>
             
             
-            <div className='wheel__content'>
+            <div className='game__content'>
                <div className='wheel_history'>
                   <p>Game history</p>
                   <div className='wheel_history_elements'>

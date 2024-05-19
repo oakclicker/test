@@ -24,7 +24,7 @@ const GameSlots = ({ isOpen, onClose }) => {
             </div>
             
             
-            <div className='slots__content'>
+            <div className='game__content'>
                <div className='slots__gameplay'>
                   <p>это контейнер где будет спин слотов</p>
                </div>

@@ -1,8 +1,3 @@
-.wheel__content {
-   margin-top: 10px;
-   overflow-y: auto;
-   max-height: calc(80vh - 30px);
-}
 
 .wheel__gameplay {
    border: 1px solid #fff;

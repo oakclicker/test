@@ -23,7 +23,7 @@ const GameCrash = ({ isOpen, onClose }) => {
                <p className='header_balance_display'>balance: 10000000</p>
             </div>
             
-            <div className='crash__content'>
+            <div className='game__content'>
                <div className='crash_history'>
                   <p>Game history</p>
                   <div className='crash_history_elements'>
